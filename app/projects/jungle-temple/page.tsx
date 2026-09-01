@@ -98,7 +98,7 @@ export default function JungleTempleProject() {
 
         <div className="project-detail-gallery-intro">
           <h2 id="gallery-title">废墟、竹林<br />与光的叙事</h2>
-          <p>通过建筑层级、自然遮挡与冷暖光线组织视线，让古寺在潮湿竹林中保持神秘而可信的空间氛围。</p>
+          <p>通过建筑层级、自然遮挡与冷暖光线组织视线，让古寺在潮湿竹林中保持神秘而可信的空间<span className="project-detail-no-break">氛围</span>。</p>
         </div>
 
         <div className="project-detail-gallery-grid">
