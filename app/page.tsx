@@ -64,8 +64,10 @@ export default function Home() {
   return (
     <main className="bg-background text-foreground">
       <section className="hero" id="top">
-        <div className="crt-bezel">
-          <div className="crt-screen">
+        <div className="hero-stage">
+          <div className="hero-star-rail hero-star-rail--top" aria-hidden="true">
+            ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦
+          </div>
             <video
               className="hero-media"
               autoPlay
@@ -77,75 +79,74 @@ export default function Home() {
             >
               <source src="/hero-loop.mp4" type="video/mp4" />
             </video>
+            <img
+              className="hero-console"
+              src="/hero-console-v1.png"
+              alt="复古未来风格的便携游戏机插画"
+            />
             <div className="hero-shade" />
             <div className="scanlines" aria-hidden="true" />
 
             <header className="site-header hero-shell">
               <a className="terminal-brand" href="#top" aria-label="回到首页">
-                <span>YANG YING®</span>
-                <small>// PORTFOLIO.2026</small>
+                <span>YY® / 2026</span>
+                <small>GAME ART &amp; VISUAL DESIGN</small>
               </a>
               <nav className="main-nav" aria-label="主要导航">
-                <a href="#profile">[ PROFILE ]</a>
-                <a href="#projects">[ PROJECTS ]</a>
-                <a href="#strengths">[ CAPABILITIES ]</a>
+                <a href="#profile">PROFILE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#strengths">CAPABILITIES</a>
               </nav>
               <a className="contact-pill" href="mailto:yangying25of@163.com">
-                <span className="status-dot" /> AVAILABLE FOR WORK
+                CONTACT ↗
               </a>
             </header>
 
             <div className="hero-content hero-shell">
               <div className="hero-kicker">
-                <span>SYS.01 / CREATIVE WORLD BUILDER</span>
-                <span>SHENZHEN, CN · 22.5431° N</span>
+                <span>NICE TO E-MEET YOU!</span>
+                <span>SHENZHEN, CN · AVAILABLE FOR WORK</span>
               </div>
 
               <div className="hero-title-block">
-                <span className="pixel-signal pixel-signal--left" aria-hidden="true">
-                  + +<br />+ +
-                </span>
-                <span className="pixel-signal pixel-signal--right" aria-hidden="true">
-                  ◇<br />·
-                </span>
-                <p className="hero-year">2026 / YANG YING</p>
+                <p className="hero-year">DESIGN PORTFOLIO <span>20—26</span></p>
                 <h1>
-                  <span>PORTFOLIO</span>
+                  <span>PORT</span>
+                  <span>FOLIO</span>
                 </h1>
+                <p className="hero-about">ABOUT YANG YING / 杨颖</p>
                 <p className="hero-role">
-                  GAME ENVIRONMENT <i>/</i> AI VISUAL <i>/</i> VISUAL DESIGN
+                  GAME ENVIRONMENT / AI VISUAL<br />3D MODELING / VISUAL DESIGN
                 </p>
                 <a className="hero-enter" href="#projects">
-                  PRESS TO EXPLORE <span>↘</span>
+                  VIEW SELECTED WORK <span>↘</span>
                 </a>
               </div>
 
               <div className="hero-bottom">
                 <div className="terminal-stat">
-                  <span>PROFILE</span>
-                  <strong>YANG YING / 杨颖</strong>
+                  <span>01 / PROFILE</span>
+                  <strong>YANG YING · 杨颖</strong>
                 </div>
                 <div className="terminal-stat">
-                  <span>SYSTEM STATUS</span>
-                  <strong>ONLINE · 100%</strong>
+                  <span>02 / FOCUS</span>
+                  <strong>WORLD BUILDING + AIGC</strong>
                 </div>
                 <div className="terminal-stat">
-                  <span>FOCUS</span>
-                  <strong>WORLD BUILDING</strong>
+                  <span>03 / EDUCATION</span>
+                  <strong>GAME ART DESIGN · MA</strong>
                 </div>
                 <a className="scroll-cue" href="#profile">
-                  ENTER PORTFOLIO <span>↓</span>
+                  SCROLL TO EXPLORE <span>↓</span>
                 </a>
               </div>
             </div>
 
             <div className="hero-index" aria-hidden="true">
-              SCREEN 01<span>/05</span>
+              GAME WORLDS / VISUAL SYSTEM<span>—01</span>
             </div>
-          </div>
-          <div className="bezel-mark" aria-hidden="true">
-            <span>YY / VISUAL SYSTEM</span>
-            <span>MODEL CRT—26</span>
+          <div className="hero-star-rail hero-star-rail--bottom" aria-hidden="true">
+            ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦
           </div>
         </div>
       </section>
