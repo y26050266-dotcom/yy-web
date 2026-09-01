@@ -1172,12 +1172,12 @@ a {
 
 .arcade-subtitle {
   margin: clamp(22px, 3vh, 38px) 0 16px;
-  color: #65d568;
-  font-family: 'DengXian', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
-  font-size: clamp(22px, 1.8vw, 30px);
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  text-shadow: 3px 3px 0 #000;
+  color: #aeb9b0;
+  font-family: 'SimHei', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: clamp(22px, 1.72vw, 29px);
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-shadow: 0 2px 0 #050607;
 }
 
 .arcade-menu {
@@ -1258,6 +1258,7 @@ a {
 }
 
 .hero-stage .terminal-stat--cn span {
+  color: #56c6e8;
   letter-spacing: 0.08em;
 }
 

@@ -139,7 +139,7 @@ export default function Home() {
                 </div>
                 <div className="terminal-stat terminal-stat--cn">
                   <span>02 / 专业方向</span>
-                  <strong>游戏场景构建 + 人工智能视觉</strong>
+                  <strong>游戏场景构建 + AIGC</strong>
                 </div>
                 <div className="terminal-stat terminal-stat--cn">
                   <span>03 / 教育背景</span>
