@@ -12,8 +12,8 @@ type ProjectItem = {
 const projects: ProjectItem[] = [
   {
     index: '01',
-    title: '丛林古庙',
-    subtitle: '中式丛林古寺 · 3D 环境设计',
+    title: '3D环境设计',
+    subtitle: '环境叙事 · 空间构图 · 场景搭建',
     image: '/projects/jungle-temple/hero.png',
     alt: '竹林深处被自然侵蚀的中式古寺三维环境场景',
     className: 'project-card project-card--wide',
@@ -28,7 +28,7 @@ const projects: ProjectItem[] = [
     alt: '被苔藓和浅水覆盖的粗野主义天文台概念场景',
     className: 'project-card',
     label: 'CONCEPT PLACEHOLDER',
-    href: null,
+    href: '/projects/last-observatory',
   },
   {
     index: '03',
@@ -38,7 +38,7 @@ const projects: ProjectItem[] = [
     alt: '暗色展厅中的透明地质记忆核心抽象视觉',
     className: 'project-card',
     label: 'CONCEPT PLACEHOLDER',
-    href: null,
+    href: '/projects/synthetic-memory',
   },
 ];
 
