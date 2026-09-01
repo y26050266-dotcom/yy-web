@@ -21,24 +21,34 @@ export const metadata: Metadata = {
 
 const gallery = [
   {
+    src: '/projects/jungle-temple/hero.png',
+    alt: '竹林深处被自然侵蚀的中式古寺三维环境主视觉',
+    label: '主视觉 / 01',
+    featured: true,
+  },
+  {
     src: '/projects/jungle-temple/scene-01.png',
     alt: '竹林小径与石灯笼构成的古寺入口场景',
-    label: '环境氛围 / 01',
+    label: '环境氛围 / 02',
+    featured: false,
   },
   {
     src: '/projects/jungle-temple/scene-02.png',
     alt: '竹叶遮挡下的中式古寺钟楼场景',
-    label: '空间层次 / 02',
+    label: '空间层次 / 03',
+    featured: false,
   },
   {
     src: '/projects/jungle-temple/scene-03.png',
     alt: '竹林环绕的古寺建筑群俯视场景',
-    label: '建筑细节 / 03',
+    label: '建筑细节 / 04',
+    featured: false,
   },
   {
     src: '/projects/jungle-temple/scene-04.png',
     alt: '自然侵蚀中的中式双层古寺建筑场景',
-    label: '材质与光 / 04',
+    label: '材质与光 / 05',
+    featured: false,
   },
 ];
 
@@ -68,16 +78,6 @@ export default function JungleTempleProject() {
           </div>
         </div>
 
-        <figure className="project-detail-hero-frame">
-          <img
-            src="/projects/jungle-temple/hero.png"
-            alt="竹林深处被自然侵蚀的中式古寺三维环境场景"
-          />
-          <figcaption>
-            <span>FINAL ENVIRONMENT / HERO VIEW</span>
-            <span>01 — 05</span>
-          </figcaption>
-        </figure>
       </section>
 
       <section className="project-detail-gallery shell" aria-labelledby="gallery-title">
@@ -94,7 +94,10 @@ export default function JungleTempleProject() {
 
         <div className="project-detail-gallery-grid">
           {gallery.map((image) => (
-            <figure className="project-detail-shot" key={image.src}>
+            <figure
+              className={`project-detail-shot${image.featured ? ' project-detail-shot--featured' : ''}`}
+              key={image.src}
+            >
               <img src={image.src} alt={image.alt} loading="lazy" />
               <figcaption>{image.label}</figcaption>
             </figure>

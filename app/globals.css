@@ -2580,6 +2580,10 @@ a {
   box-shadow: 0 0 0 3px #747c82, 8px 9px 0 #050607;
 }
 
+.project-detail-shot--featured {
+  grid-column: 1 / -1;
+}
+
 .project-detail-shot img {
   display: block;
   width: 100%;
