@@ -1234,8 +1234,23 @@ a {
   color: rgb(255 255 255 / 38%);
 }
 
-.hero-stage .terminal-stat span { color: rgb(255 255 255 / 20%); }
-.hero-stage .terminal-stat strong { color: rgb(255 255 255 / 52%); }
+.hero-stage .terminal-stat {
+  gap: 8px;
+}
+
+.hero-stage .terminal-stat span {
+  color: rgb(255 255 255 / 54%);
+  font-size: 8px;
+  font-weight: 720;
+}
+
+.hero-stage .terminal-stat strong {
+  color: #f4f3ef;
+  font-size: clamp(11px, 0.8vw, 14px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0.055em;
+}
 
 .hero-stage .terminal-stat--identity {
   gap: 8px;
@@ -1255,8 +1270,21 @@ a {
   letter-spacing: 0.06em;
 }
 
-.hero-stage .scroll-cue { color: #f4f3ef; font-weight: 800; text-shadow: 2px 2px 0 #000; }
-.hero-stage .scroll-cue span { border-color: #f4f3ef; }
+.hero-stage .scroll-cue {
+  gap: 14px;
+  color: #f4f3ef;
+  font-size: clamp(10px, 0.72vw, 12px);
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-shadow: none;
+}
+
+.hero-stage .scroll-cue span {
+  width: 34px;
+  height: 34px;
+  border-color: #f4f3ef;
+  font-size: 12px;
+}
 .hero-stage .hero-index { color: rgb(255 255 255 / 22%); }
 
 .section-pad {
