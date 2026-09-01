@@ -1106,10 +1106,10 @@ a {
 .panel-player {
   margin: 0 0 10px;
   color: #1b1d21;
-  font-family: var(--font-geist-mono), 'Courier New', monospace;
-  font-size: 9px;
-  font-weight: 850;
-  letter-spacing: 0.13em;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-shadow: 0 1px 0 rgb(255 255 255 / 25%);
 }
 
@@ -1975,30 +1975,38 @@ a {
 }
 
 .overline {
-  color: #202328;
-  font-weight: 900;
-  text-shadow: 0 1px 0 rgb(255 255 255 / 24%);
+  color: #30464d;
+  font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-shadow: none;
 }
 
 .profile-story h2,
 .projects-intro h2,
 .strengths-intro h2 {
-  font-family: var(--font-geist-mono), 'Courier New', monospace;
-  font-weight: 950;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
+  font-family: 'SimHei', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  text-transform: none;
 }
 
 .profile-story h2 {
-  color: #15171a;
-  text-shadow: 3px 3px 0 rgb(255 255 255 / 28%);
+  color: #1c2227;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 20%);
 }
 
-.profile-story h2 span { color: #f04a2f; text-shadow: 3px 3px 0 #292c31; }
+.profile-story h2 span {
+  color: #a95043;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 12%);
+}
 
 .lead {
-  color: rgb(20 22 25 / 78%);
-  font-weight: 650;
+  color: rgb(24 31 36 / 84%);
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
 }
 
 .profile-facts { border-top: 3px solid rgb(20 22 25 / 42%); }
@@ -2043,10 +2051,15 @@ a {
   box-shadow: 0 0 0 3px #c4c8cb, 8px 9px 0 #050607;
 }
 
+.projects-intro h2 {
+  color: #20262b;
+  text-shadow: 2px 3px 0 rgb(255 255 255 / 22%);
+}
+
 .projects-intro h2 span {
-  color: #56c6e8;
-  -webkit-text-stroke: 2px #181a1d;
-  text-shadow: 4px 4px 0 #292c31;
+  color: #4f747e;
+  -webkit-text-stroke: 1px #20262b;
+  text-shadow: 3px 3px 0 #31383d;
 }
 
 .projects-intro p {
@@ -2103,8 +2116,16 @@ a {
   box-shadow: 0 0 0 3px #676d72, 8px 9px 0 #050607, inset 0 2px 0 rgb(255 255 255 / 12%);
 }
 
-.strengths-intro h2 { color: #f3f2ee; text-shadow: 4px 4px 0 #000; }
-.strengths-intro h2 span { color: #65d568; -webkit-text-stroke: 1px #15171a; text-shadow: 4px 4px 0 #000; }
+.strengths-intro h2 {
+  color: #d8d9d4;
+  text-shadow: 3px 3px 0 #090a0b;
+}
+
+.strengths-intro h2 span {
+  color: #7f9e89;
+  -webkit-text-stroke: 1px #15171a;
+  text-shadow: 3px 3px 0 #090a0b;
+}
 .strengths-intro p { color: rgb(255 255 255 / 58%); font-family: var(--font-geist-mono), monospace; }
 
 .strength-grid {

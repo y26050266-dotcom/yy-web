@@ -109,7 +109,7 @@ export default function Home() {
                   <span className="arcade-mascot arcade-mascot--rocket" aria-hidden="true">
                     <img src="/pixel-mascots-v1.png" alt="" />
                   </span>
-                  <p className="panel-player">YANG YING · PORTFOLIO 2026</p>
+                  <p className="panel-player">杨颖 · PORTFOLIO 2026</p>
                   <h1 aria-label="PORTFOLIO">
                     <span className="arcade-word">
                       <i>P</i><i>O</i><i>R</i><i>T</i>
@@ -249,9 +249,9 @@ export default function Home() {
 
           <div className="projects-intro">
             <h2>
-              SELECTED
+              精选
               <br />
-              <span>WORKS.</span>
+              <span>作品</span>
             </h2>
             <p>
               当前作品图为基础版概念占位，用于确认网站的视觉方向与版式。
@@ -293,9 +293,9 @@ export default function Home() {
 
           <div className="strengths-intro">
             <h2>
-              A HYBRID
+              复合型
               <br />
-              <span>CREATIVE TOOLKIT.</span>
+              <span>创意工具箱</span>
             </h2>
             <p>
               从场景资产到最终画面，我在技术执行与视觉表达之间建立连接，
