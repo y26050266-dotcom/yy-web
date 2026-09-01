@@ -1,11 +1,24 @@
-const projects = [
+type ProjectItem = {
+  index: string;
+  title: string;
+  subtitle: string;
+  image: string;
+  alt: string;
+  className: string;
+  label: string;
+  href: string | null;
+};
+
+const projects: ProjectItem[] = [
   {
     index: '01',
-    title: 'MONOLITH FIELD',
-    subtitle: '场景构建 · 氛围灯光 · PBR 材质',
-    image: '/project-monolith.png',
-    alt: '黑色巨型科幻建筑矗立在潮湿平原上的概念场景',
+    title: '丛林古庙',
+    subtitle: '中式丛林古寺 · 3D 环境设计',
+    image: '/projects/jungle-temple/hero.png',
+    alt: '竹林深处被自然侵蚀的中式古寺三维环境场景',
     className: 'project-card project-card--wide',
+    label: '3D ENVIRONMENT',
+    href: '/projects/jungle-temple',
   },
   {
     index: '02',
@@ -14,6 +27,8 @@ const projects = [
     image: '/project-observatory.png',
     alt: '被苔藓和浅水覆盖的粗野主义天文台概念场景',
     className: 'project-card',
+    label: 'CONCEPT PLACEHOLDER',
+    href: null,
   },
   {
     index: '03',
@@ -22,8 +37,44 @@ const projects = [
     image: '/project-memory.png',
     alt: '暗色展厅中的透明地质记忆核心抽象视觉',
     className: 'project-card',
+    label: 'CONCEPT PLACEHOLDER',
+    href: null,
   },
 ];
+
+function ProjectCard({ project }: { project: ProjectItem }) {
+  const content = (
+    <>
+      <img src={project.image} alt={project.alt} loading="lazy" />
+      <div className="project-overlay" />
+      <div className="project-topline">
+        <span>{project.label} / {project.index}</span>
+        <span>↗</span>
+      </div>
+      <div className="project-meta">
+        <span>{project.index}</span>
+        <div>
+          <h3>{project.title}</h3>
+          <p>{project.subtitle}</p>
+        </div>
+      </div>
+    </>
+  );
+
+  if (project.href) {
+    return (
+      <a
+        className={project.className}
+        href={project.href}
+        aria-label={`查看${project.title}项目详情`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return <article className={project.className}>{content}</article>;
+}
 
 export default function Home() {
   return (
@@ -251,21 +302,7 @@ export default function Home() {
 
           <div className="project-grid">
             {projects.map((project) => (
-              <article className={project.className} key={project.title}>
-                <img src={project.image} alt={project.alt} loading="lazy" />
-                <div className="project-overlay" />
-                <div className="project-topline">
-                  <span>CONCEPT PLACEHOLDER / {project.index}</span>
-                  <span>↗</span>
-                </div>
-                <div className="project-meta">
-                  <span>{project.index}</span>
-                  <div>
-                    <h3>{project.title}</h3>
-                    <p>{project.subtitle}</p>
-                  </div>
-                </div>
-              </article>
+              <ProjectCard project={project} key={project.title} />
             ))}
           </div>
         </div>
