@@ -137,16 +137,16 @@ export default function Home() {
                   <span>01 / PROFILE</span>
                   <strong>YANG YING · 杨颖</strong>
                 </div>
-                <div className="terminal-stat">
-                  <span>02 / FOCUS</span>
-                  <strong>WORLD BUILDING + AIGC</strong>
+                <div className="terminal-stat terminal-stat--cn">
+                  <span>02 / 专业方向</span>
+                  <strong>游戏场景构建 + 人工智能视觉</strong>
                 </div>
-                <div className="terminal-stat">
-                  <span>03 / EDUCATION</span>
-                  <strong>GAME ART DESIGN · MA</strong>
+                <div className="terminal-stat terminal-stat--cn">
+                  <span>03 / 教育背景</span>
+                  <strong>游戏美术设计 · 硕士</strong>
                 </div>
                 <a className="scroll-cue" href="#profile">
-                  PRESS START <span>↓</span>
+                  开始浏览 <span>↓</span>
                 </a>
               </div>
             </div>
