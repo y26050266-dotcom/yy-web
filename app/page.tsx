@@ -151,14 +151,14 @@ export default function Home() {
               <aside className="skills-panel" aria-labelledby="skills-panel-title">
                 <div className="skills-panel__header">
                   <span id="skills-panel-title">SKILLSET / 技能与软件</span>
-                  <small>04 CATEGORIES</small>
+                  <small>04 类目</small>
                 </div>
                 <div className="skill-groups">
                   <div className="skill-group">
                     <b>01</b>
                     <div>
-                      <h3>新媒体运营</h3>
-                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营</p>
+                      <h3>3D 设计</h3>
+                      <p>Blender · Maya · ZBrush · Substance 3D Painter · Procreate</p>
                     </div>
                   </div>
                   <div className="skill-group">
@@ -171,8 +171,8 @@ export default function Home() {
                   <div className="skill-group">
                     <b>03</b>
                     <div>
-                      <h3>3D 设计</h3>
-                      <p>Blender · Maya · ZBrush · Substance 3D Painter · Procreate</p>
+                      <h3>新媒体运营</h3>
+                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营</p>
                     </div>
                   </div>
                   <div className="skill-group">
