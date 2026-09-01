@@ -1138,7 +1138,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   paint-order: stroke fill;
-  text-shadow: 4px 4px 0 #22252a, 7px 7px 0 rgb(0 0 0 / 42%);
+  text-shadow: 4px 5px 0 #24272b;
 }
 
 .arcade-word:first-child i:nth-child(2) { --glyph: #54c4e5; }
@@ -2217,7 +2217,7 @@ a {
   }
 
   .arcade-word { gap: 4px; }
-  .arcade-word i { -webkit-text-stroke-width: 1px; text-shadow: 3px 3px 0 #22252a; }
+  .arcade-word i { -webkit-text-stroke-width: 1px; text-shadow: 3px 4px 0 #24272b; }
 
   .arcade-subtitle {
     margin: 24px 0 12px;
