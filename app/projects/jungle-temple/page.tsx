@@ -48,7 +48,7 @@ export default function JungleTempleProject() {
   return (
     <main className="project-detail-page">
       <header className="project-detail-nav shell">
-        <a href="/#projects">← 返回精选作品</a>
+        <a href="/projects/3d-environment">← 返回3D环境设计</a>
         <div>
           <span>PROJECT / 01</span>
           <small>3D ENVIRONMENT</small>
@@ -113,7 +113,7 @@ export default function JungleTempleProject() {
 
       <footer className="project-detail-footer shell">
         <span>YANG YING · PORTFOLIO 2026</span>
-        <a href="/#projects">返回作品列表 ↑</a>
+        <a href="/projects/3d-environment">返回3D环境作品 ↑</a>
       </footer>
     </main>
   );

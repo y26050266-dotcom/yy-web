@@ -17,8 +17,8 @@ const projects: ProjectItem[] = [
     image: '/projects/jungle-temple/hero.png',
     alt: '竹林深处被自然侵蚀的中式古寺三维环境场景',
     className: 'project-card project-card--wide',
-    label: '3D ENVIRONMENT',
-    href: '/projects/jungle-temple',
+    label: 'CATEGORY · 3D ENVIRONMENT',
+    href: '/projects/3d-environment',
   },
   {
     index: '02',
@@ -66,7 +66,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
       <a
         className={project.className}
         href={project.href}
-        aria-label={`查看${project.title}项目详情`}
+        aria-label={`查看${project.title}`}
       >
         {content}
       </a>
