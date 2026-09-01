@@ -172,7 +172,7 @@ export default function Home() {
                     <b>03</b>
                     <div>
                       <h3>新媒体运营</h3>
-                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营</p>
+                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营 · Canva</p>
                     </div>
                   </div>
                   <div className="skill-group">
@@ -222,20 +222,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="stats-grid">
-            <div className="stat-item">
-              <strong>02<span>×</span></strong>
-              <p>两个学习阶段<br />专业排名前 10%</p>
-            </div>
-            <div className="stat-item">
-              <strong>03<span>+</span></strong>
-              <p>3D · AIGC · 视觉<br />跨方向创作能力</p>
-            </div>
-            <div className="stat-item">
-              <strong>10<span>+</span></strong>
-              <p>软件与创作工具<br />覆盖完整视觉链路</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -251,10 +237,6 @@ export default function Home() {
 
           <div className="projects-intro">
             <h2>精选作品</h2>
-            <p>
-              当前作品图为基础版概念占位，用于确认网站的视觉方向与版式。
-              后续替换为你的真实项目图、过程图与项目说明。
-            </p>
           </div>
 
           <div className="project-grid">
