@@ -122,14 +122,14 @@ export default function Home() {
                     <span /><span /><span /><span /><span /><span />
                   </div>
                 </div>
-                <h2 className="arcade-subtitle">SELECT YOUR LEVEL</h2>
+                <h2 className="arcade-subtitle">选择你的关卡</h2>
                 <nav className="arcade-menu" aria-label="首屏快捷导航">
-                  <a href="#profile"><b>01</b><span>PROFILE</span></a>
-                  <a href="#projects"><b>02</b><span>PROJECTS</span></a>
-                  <a href="#strengths"><b>03</b><span>SKILLS</span></a>
-                  <a href="#contact"><b>04</b><span>CONTACT</span></a>
+                  <a href="#profile"><b>01</b><span>个人经历</span></a>
+                  <a href="#projects"><b>02</b><span>精选项目</span></a>
+                  <a href="#strengths"><b>03</b><span>个人优势</span></a>
+                  <a href="#contact"><b>04</b><span>联系方式</span></a>
                 </nav>
-                <p className="hero-role">GAME ENVIRONMENT · AI VISUAL · 3D MODELING · VISUAL DESIGN</p>
+                <p className="hero-role">游戏场景设计 · AI 视觉设计 · 3D 建模 · 视觉设计</p>
               </div>
 
               <div className="hero-bottom">
