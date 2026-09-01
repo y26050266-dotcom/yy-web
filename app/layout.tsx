@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
-const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
+const siteUrl =
+  process.env.SITE_URL ??
+  'https://yang-ying-portfolio-2026.y26050266.chatgpt.site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
