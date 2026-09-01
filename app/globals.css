@@ -1182,7 +1182,7 @@ a {
 
 .arcade-menu {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(10px, 1.2vw, 18px);
 }
 
@@ -1205,8 +1205,7 @@ a {
 }
 
 .arcade-menu a:nth-child(2) { background: #f1c53d; }
-.arcade-menu a:nth-child(3) { background: #f04a2f; }
-.arcade-menu a:nth-child(4) { background: #df61d4; }
+.arcade-menu a:nth-child(3) { background: #df61d4; }
 .arcade-menu a:hover { translate: 0 3px; box-shadow: 0 0 0 2px #8e969d, 1px 2px 0 #050607; }
 
 .arcade-menu b {

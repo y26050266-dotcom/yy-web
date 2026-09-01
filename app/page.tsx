@@ -25,41 +25,6 @@ const projects = [
   },
 ];
 
-const strengths = [
-  {
-    index: '01',
-    title: '3D ENVIRONMENT',
-    cn: '游戏场景与资产制作',
-    description:
-      '从空间白盒、环境资产到最终场景，兼顾画面构图、尺度关系与叙事氛围。',
-    tools: ['Blender', 'Maya', 'ZBrush'],
-  },
-  {
-    index: '02',
-    title: 'MATERIAL & LIGHT',
-    cn: '材质与灯光氛围',
-    description:
-      '理解 PBR 材质逻辑，通过表面细节、色彩与光影建立可信且有情绪的空间。',
-    tools: ['Substance 3D Painter', 'PBR', 'Lighting'],
-  },
-  {
-    index: '03',
-    title: 'AI VISUAL',
-    cn: 'AIGC 视觉开发',
-    description:
-      '将 AI 生成融入 3D 设计流程，用于场景概念、画面探索与短内容创作。',
-    tools: ['Midjourney', '即梦 AI', '可灵 AI'],
-  },
-  {
-    index: '04',
-    title: 'VISUAL STORY',
-    cn: '视觉叙事与内容表达',
-    description:
-      '以构图、摄影、色彩和剪辑组织视觉信息，让场景拥有明确的观看节奏。',
-    tools: ['Photography', '剪映', 'Visual Design'],
-  },
-];
-
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
@@ -79,7 +44,6 @@ export default function Home() {
               <nav className="main-nav" aria-label="主要导航">
                 <a href="#profile">PROFILE</a>
                 <a href="#projects">PROJECTS</a>
-                <a href="#strengths">CAPABILITIES</a>
               </nav>
               <a className="contact-pill" href="mailto:yangying25of@163.com">
                 CONTACT ↗
@@ -126,8 +90,7 @@ export default function Home() {
                 <nav className="arcade-menu" aria-label="首屏快捷导航">
                   <a href="#profile"><b>01</b><span>个人经历</span></a>
                   <a href="#projects"><b>02</b><span>精选项目</span></a>
-                  <a href="#strengths"><b>03</b><span>个人优势</span></a>
-                  <a href="#contact"><b>04</b><span>联系方式</span></a>
+                  <a href="#contact"><b>03</b><span>联系方式</span></a>
                 </nav>
                 <p className="hero-role">游戏场景设计 · AI 视觉设计 · 3D 建模 · 视觉设计</p>
               </div>
@@ -277,47 +240,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="strengths-section section-pad" id="strengths">
-        <div className="shell">
-          <div className="section-heading">
-            <div className="section-label">
-              <span>04</span>
-              <span>CAPABILITIES / 个人优势</span>
-            </div>
-            <p>HOW I BUILD VISUALS</p>
-          </div>
-
-          <div className="strengths-intro">
-            <h2>复合型视觉创作能力</h2>
-            <p>
-              从场景资产到最终画面，我在技术执行与视觉表达之间建立连接，
-              让工具服务于氛围、叙事与清晰的设计意图。
-            </p>
-          </div>
-
-          <div className="strength-grid">
-            {strengths.map((strength) => (
-              <article className="strength-card" key={strength.index}>
-                <div className="strength-number">{strength.index}</div>
-                <div className="strength-glyph" aria-hidden="true">
-                  <span />
-                  <span />
-                  <span />
-                </div>
-                <h3>{strength.title}</h3>
-                <h4>{strength.cn}</h4>
-                <p>{strength.description}</p>
-                <div className="tool-list">
-                  {strength.tools.map((tool) => (
-                    <span key={tool}>{tool}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="contact-section" id="contact">
         <img
           className="contact-image"
@@ -329,7 +251,7 @@ export default function Home() {
         <div className="contact-shell shell">
           <div className="section-heading section-heading--contact">
             <div className="section-label">
-              <span>05</span>
+              <span>04</span>
               <span>CONTACT / 联系方式</span>
             </div>
             <p>AVAILABLE FOR OPPORTUNITIES</p>
