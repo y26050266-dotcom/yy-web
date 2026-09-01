@@ -80,13 +80,7 @@ export default function JungleTempleProject() {
 
       </section>
 
-      <section className="project-detail-gallery shell" aria-labelledby="gallery-title">
-        <div className="project-detail-bar">
-          <span>02</span>
-          <span>SCENE GALLERY / 场景展示</span>
-          <small>FINAL RENDERS</small>
-        </div>
-
+      <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-labelledby="gallery-title">
         <div className="project-detail-gallery-intro">
           <h2 id="gallery-title">废墟、竹林<br />与光的叙事</h2>
           <p>通过建筑层级、自然遮挡与冷暖光线组织视线，让古寺在潮湿竹林中保持神秘而可信的空间<span className="project-detail-no-break">氛围</span>。</p>

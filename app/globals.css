@@ -2507,6 +2507,14 @@ a {
   padding: clamp(110px, 12vw, 190px) 0;
 }
 
+.project-detail-gallery--no-bar {
+  padding-top: clamp(72px, 8vw, 120px);
+}
+
+.project-detail-gallery--no-bar .project-detail-gallery-intro {
+  padding-top: 0;
+}
+
 .project-detail-bar {
   min-height: 66px;
   padding: 14px 26px;
