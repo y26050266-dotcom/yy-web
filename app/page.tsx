@@ -138,9 +138,9 @@ export default function Home() {
               <figure className="portrait-panel">
                 <img
                   src="/avatar.jpg"
-                  alt="杨颖简历中使用的猫咪头像"
-                  width="200"
-                  height="200"
+                  alt="杨颖个人照片"
+                  width="300"
+                  height="400"
                 />
                 <figcaption>
                   <span>YANG YING</span>

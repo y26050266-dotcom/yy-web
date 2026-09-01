@@ -1384,10 +1384,11 @@ a {
 .portrait-panel img {
   position: relative;
   z-index: 1;
-  width: min(72%, 320px);
-  aspect-ratio: 1;
+  width: min(88%, 340px);
+  aspect-ratio: 3 / 4;
   margin: auto;
   object-fit: cover;
+  object-position: center 48%;
   filter: grayscale(0.35) contrast(1.06);
   border: 1px solid rgb(255 255 255 / 18%);
 }
@@ -1962,8 +1963,8 @@ a {
 }
 
 .portrait-panel img {
-  image-rendering: pixelated;
-  filter: grayscale(0.45) contrast(1.15);
+  image-rendering: auto;
+  filter: saturate(0.82) contrast(1.04) brightness(0.92);
   border: 4px solid #17191c;
   box-shadow: 0 0 0 3px #9ca2a7, 5px 6px 0 #15171a;
 }
