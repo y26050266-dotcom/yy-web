@@ -57,23 +57,14 @@ export default function JungleTempleProject() {
       </header>
 
       <section className="project-detail-hero shell">
-        <div className="project-detail-header">
+        <div className="project-detail-header project-detail-header--compact">
           <div className="project-detail-title">
             <p>3D ENVIRONMENT · PERSONAL PROJECT</p>
-            <h1>丛林古庙</h1>
             <div className="project-detail-tags" aria-label="项目职责">
               {responsibilities.map((item, index) => (
                 <span key={item}><b>{String(index + 1).padStart(2, '0')}</b>{item}</span>
               ))}
             </div>
-          </div>
-
-          <div className="project-detail-copy">
-            <span>01 / PROJECT OVERVIEW</span>
-            <p>
-              《丛林古庙》是一项中式丛林古寺 3D 环境设计，展现自然侵蚀下的废墟与神秘氛围。
-              我独立完成了建模、雕刻、材质、场景搭建、灯光及最终渲染。
-            </p>
           </div>
         </div>
 
