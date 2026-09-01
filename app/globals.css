@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Pixelify Local';
+  src: url('/fonts/pixelify-sans-700.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -1069,27 +1077,31 @@ a {
 }
 
 .arcade-title-panel::before,
-.arcade-title-panel::after {
+.arcade-title-panel::after { display: none; }
+
+.arcade-mascot {
   position: absolute;
-  z-index: 2;
-  color: #24272b;
-  font-family: 'Silkscreen Local', monospace;
-  font-size: 11px;
-  letter-spacing: 0.5em;
-  text-shadow: 0 1px 0 rgb(255 255 255 / 18%);
+  z-index: 5;
+  top: -70px;
+  width: 104px;
+  height: 96px;
+  overflow: hidden;
+  pointer-events: none;
 }
 
-.arcade-title-panel::before {
-  content: '+  ◆  ·';
-  left: 34px;
-  top: 20px;
+.arcade-mascot img {
+  position: absolute;
+  top: 0;
+  width: auto;
+  max-width: none;
+  height: 126px;
+  image-rendering: pixelated;
 }
 
-.arcade-title-panel::after {
-  content: '·  ◆  +';
-  right: 28px;
-  bottom: 17px;
-}
+.arcade-mascot--robot { left: 46px; }
+.arcade-mascot--robot img { left: -8px; }
+.arcade-mascot--rocket { right: 46px; }
+.arcade-mascot--rocket img { right: 0; }
 
 .panel-player {
   margin: 0 0 10px;
@@ -1104,9 +1116,9 @@ a {
 .hero-stage .arcade-title-panel h1 {
   width: 100%;
   gap: 0;
-  font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
-  font-size: clamp(56px, 6vw, 106px);
-  line-height: 0.8;
+  font-family: 'Pixelify Local', 'Silkscreen Local', monospace;
+  font-size: clamp(64px, 6.6vw, 118px);
+  line-height: 0.76;
   letter-spacing: 0;
   font-weight: 700;
   font-variant-ligatures: none;
@@ -1126,19 +1138,19 @@ a {
 
 .arcade-word i {
   min-width: 0;
-  margin-inline: -0.035em;
+  margin-inline: -0.055em;
   --glyph: #d9dde0;
   color: transparent;
   font-style: normal;
   font-weight: 700;
-  -webkit-text-stroke: 1px #181a1d;
+  -webkit-text-stroke: 2px #181a1d;
   background:
     radial-gradient(circle, #25282c 0 1.3px, transparent 1.7px) 2px 2px / 12px 12px,
     linear-gradient(var(--glyph), var(--glyph));
   background-clip: text;
   -webkit-background-clip: text;
   paint-order: stroke fill;
-  text-shadow: 4px 5px 0 #24272b;
+  text-shadow: 0 7px 0 #24272b;
 }
 
 .arcade-word:first-child i:nth-child(2) { --glyph: #54c4e5; }
@@ -2217,7 +2229,17 @@ a {
   }
 
   .arcade-word { gap: 4px; }
-  .arcade-word i { -webkit-text-stroke-width: 1px; text-shadow: 3px 4px 0 #24272b; }
+  .arcade-word i { -webkit-text-stroke-width: 1px; text-shadow: 0 4px 0 #24272b; }
+
+  .arcade-mascot {
+    top: -45px;
+    width: 66px;
+    height: 62px;
+  }
+
+  .arcade-mascot img { height: 82px; }
+  .arcade-mascot--robot { left: 24px; }
+  .arcade-mascot--rocket { right: 24px; }
 
   .arcade-subtitle {
     margin: 24px 0 12px;

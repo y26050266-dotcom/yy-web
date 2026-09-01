@@ -103,6 +103,12 @@ export default function Home() {
                   <i className="panel-screw panel-screw--tr" aria-hidden="true" />
                   <i className="panel-screw panel-screw--bl" aria-hidden="true" />
                   <i className="panel-screw panel-screw--br" aria-hidden="true" />
+                  <span className="arcade-mascot arcade-mascot--robot" aria-hidden="true">
+                    <img src="/pixel-mascots-v1.png" alt="" />
+                  </span>
+                  <span className="arcade-mascot arcade-mascot--rocket" aria-hidden="true">
+                    <img src="/pixel-mascots-v1.png" alt="" />
+                  </span>
                   <p className="panel-player">YANG YING · PORTFOLIO 2026</p>
                   <h1 aria-label="PORTFOLIO">
                     <span className="arcade-word">
