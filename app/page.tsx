@@ -222,6 +222,16 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="stats-grid stats-grid--two">
+            <div className="stat-item">
+              <strong>03<span>+</span></strong>
+              <p>3D · AIGC · 视觉<br />跨方向创作能力</p>
+            </div>
+            <div className="stat-item">
+              <strong>10<span>+</span></strong>
+              <p>软件与创作工具<br />覆盖完整视觉链路</p>
+            </div>
+          </div>
         </div>
       </section>
 

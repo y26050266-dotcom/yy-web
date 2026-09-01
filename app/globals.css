@@ -2120,6 +2120,9 @@ a {
 
 .stat-item:nth-child(2) { background: #f1c53d; }
 .stat-item:nth-child(3) { background: #65d568; }
+.stats-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stats-grid--two .stat-item:nth-child(1) { background: #f1c53d; }
+.stats-grid--two .stat-item:nth-child(2) { background: #65d568; }
 .stat-item strong {
   font-family: var(--font-geist-mono), 'Courier New', monospace;
   font-weight: 950;
