@@ -2748,13 +2748,13 @@ a {
 
 .project-category-card h2 {
   margin: 24px 0 14px;
-  color: #e8e9e4;
-  font-family: 'Pixelify Local', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  color: #a9c9c7;
+  font-family: 'YouYuan', 'Yuanti SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
   font-size: clamp(46px, 4.8vw, 82px);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  text-shadow: 4px 5px 0 #050607;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.035em;
+  text-shadow: 3px 4px 0 #27363b, 6px 7px 0 #050607;
 }
 
 .project-category-card-copy .project-category-card-tags {
