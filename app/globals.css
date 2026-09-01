@@ -2,6 +2,14 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
+@font-face {
+  font-family: 'Silkscreen Local';
+  src: url('/fonts/silkscreen-700.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -1060,6 +1068,29 @@ a {
     inset 0 -4px 0 rgb(0 0 0 / 36%);
 }
 
+.arcade-title-panel::before,
+.arcade-title-panel::after {
+  position: absolute;
+  z-index: 2;
+  color: #24272b;
+  font-family: 'Silkscreen Local', monospace;
+  font-size: 11px;
+  letter-spacing: 0.5em;
+  text-shadow: 0 1px 0 rgb(255 255 255 / 18%);
+}
+
+.arcade-title-panel::before {
+  content: '+  ◆  ·';
+  left: 34px;
+  top: 20px;
+}
+
+.arcade-title-panel::after {
+  content: '·  ◆  +';
+  right: 28px;
+  bottom: 17px;
+}
+
 .panel-player {
   margin: 0 0 10px;
   color: #1b1d21;
@@ -1073,41 +1104,50 @@ a {
 .hero-stage .arcade-title-panel h1 {
   width: 100%;
   gap: 0;
-  font-family: var(--font-geist-mono), 'Courier New', monospace;
-  font-size: clamp(60px, 6.1vw, 108px);
-  line-height: 0.82;
-  letter-spacing: -0.08em;
-  font-weight: 950;
+  font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
+  font-size: clamp(56px, 6vw, 106px);
+  line-height: 0.8;
+  letter-spacing: 0;
+  font-weight: 700;
   font-variant-ligatures: none;
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
 }
 
 .arcade-word {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: clamp(5px, 0.8vw, 14px);
+  gap: 0;
   background: none !important;
   filter: none !important;
 }
 
 .arcade-word i {
-  min-width: 0.74em;
-  color: #d9dde0;
+  min-width: 0;
+  margin-inline: -0.035em;
+  --glyph: #d9dde0;
+  color: transparent;
   font-style: normal;
-  font-weight: 950;
-  -webkit-text-stroke: 2px #181a1d;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #181a1d;
+  background:
+    radial-gradient(circle, #25282c 0 1.3px, transparent 1.7px) 2px 2px / 12px 12px,
+    linear-gradient(var(--glyph), var(--glyph));
+  background-clip: text;
+  -webkit-background-clip: text;
   paint-order: stroke fill;
-  text-shadow: 3px 0 0 currentColor, 0 3px 0 currentColor, 4px 5px 0 #22252a, 7px 8px 0 rgb(0 0 0 / 38%);
+  text-shadow: 4px 4px 0 #22252a, 7px 7px 0 rgb(0 0 0 / 42%);
 }
 
-.arcade-word:first-child i:nth-child(2) { color: #54c4e5; }
-.arcade-word:first-child i:nth-child(4) { color: #eef0ed; }
-.arcade-word:nth-child(2) i:nth-child(1) { color: #8b68e5; }
-.arcade-word:nth-child(2) i:nth-child(2) { color: #d2d5d7; }
-.arcade-word:nth-child(2) i:nth-child(3) { color: #f04a2f; }
-.arcade-word:nth-child(2) i:nth-child(4) { color: #df61d4; }
-.arcade-word:nth-child(2) i:nth-child(5) { color: #65d568; }
+.arcade-word:first-child i:nth-child(2) { --glyph: #54c4e5; }
+.arcade-word:first-child i:nth-child(4) { --glyph: #eef0ed; }
+.arcade-word:nth-child(2) i:nth-child(1) { --glyph: #8b68e5; }
+.arcade-word:nth-child(2) i:nth-child(2) { --glyph: #d2d5d7; }
+.arcade-word:nth-child(2) i:nth-child(3) { --glyph: #f04a2f; }
+.arcade-word:nth-child(2) i:nth-child(4) { --glyph: #df61d4; }
+.arcade-word:nth-child(2) i:nth-child(5) { --glyph: #65d568; }
 
 .title-colorbar { display: none; }
 
