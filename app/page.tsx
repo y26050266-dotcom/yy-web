@@ -108,16 +108,16 @@ export default function Home() {
                 <span className="pixel-signal pixel-signal--right" aria-hidden="true">
                   ◇<br />·
                 </span>
-                <p>GAME ENVIRONMENT · AI VISUAL · DESIGN</p>
+                <p className="hero-year">2026 / YANG YING</p>
                 <h1>
-                  <span>BUILDING</span>
-                  <span>WORLDS</span>
+                  <span>PORTFOLIO</span>
                 </h1>
-                <div className="hero-title-meta">
-                  <span>3D ENVIRONMENT / PBR / LIGHTING</span>
-                  <strong>PHOSPHOR GREEN EDITION</strong>
-                  <span>AIGC / VISUAL STORY / MOTION</span>
-                </div>
+                <p className="hero-role">
+                  GAME ENVIRONMENT <i>/</i> AI VISUAL <i>/</i> VISUAL DESIGN
+                </p>
+                <a className="hero-enter" href="#projects">
+                  PRESS TO EXPLORE <span>↘</span>
+                </a>
               </div>
 
               <div className="hero-bottom">
