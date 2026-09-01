@@ -134,25 +134,64 @@ export default function Home() {
           </div>
 
           <div className="profile-grid">
-            <figure className="portrait-panel">
-              <img
-                src="/avatar.jpg"
-                alt="杨颖简历中使用的猫咪头像"
-                width="200"
-                height="200"
-              />
-              <figcaption>
-                <span>YANG YING</span>
-                <span>23 / SHENZHEN</span>
-              </figcaption>
-            </figure>
+            <div className="profile-side">
+              <figure className="portrait-panel">
+                <img
+                  src="/avatar.jpg"
+                  alt="杨颖简历中使用的猫咪头像"
+                  width="200"
+                  height="200"
+                />
+                <figcaption>
+                  <span>YANG YING</span>
+                  <span>23 / SHENZHEN</span>
+                </figcaption>
+              </figure>
+
+              <aside className="skills-panel" aria-labelledby="skills-panel-title">
+                <div className="skills-panel__header">
+                  <span id="skills-panel-title">SKILLSET / 技能与软件</span>
+                  <small>04 CATEGORIES</small>
+                </div>
+                <div className="skill-groups">
+                  <div className="skill-group">
+                    <b>01</b>
+                    <div>
+                      <h3>新媒体运营</h3>
+                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营</p>
+                    </div>
+                  </div>
+                  <div className="skill-group">
+                    <b>02</b>
+                    <div>
+                      <h3>AIGC</h3>
+                      <p>Midjourney · 即梦 · 可灵 · ChatGPT · Nano Banana</p>
+                    </div>
+                  </div>
+                  <div className="skill-group">
+                    <b>03</b>
+                    <div>
+                      <h3>3D 设计</h3>
+                      <p>Blender · Maya · ZBrush · Substance 3D Painter · Procreate</p>
+                    </div>
+                  </div>
+                  <div className="skill-group">
+                    <b>04</b>
+                    <div>
+                      <h3>视频制作</h3>
+                      <p>剪映 · 短视频剪辑 · 基础视觉包装</p>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
 
             <div className="profile-story">
               <p className="overline">GAME ART · AI VISUAL · DESIGN</p>
               <h2>
-                我用<span>空间、材质与光</span>
+                我用<span className="accent">空间、材质与光</span>
                 <br />
-                构建可以被感受的世界。
+                构建可以被感受的<span className="world-word">世界</span>
               </h2>
               <p className="lead">
                 目前就读于英国赫特福德大学游戏美术设计硕士，拥有动画与游戏美术背景。
