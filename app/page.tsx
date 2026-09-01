@@ -133,7 +133,7 @@ export default function Home() {
               </div>
 
               <div className="hero-bottom">
-                <div className="terminal-stat">
+                <div className="terminal-stat terminal-stat--identity">
                   <span>01 / PROFILE</span>
                   <strong>YANG YING · 杨颖</strong>
                 </div>

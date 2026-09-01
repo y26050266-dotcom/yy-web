@@ -1229,12 +1229,32 @@ a {
 }
 
 .hero-stage .hero-bottom {
+  grid-template-columns: minmax(220px, 1.25fr) repeat(2, minmax(0, 1fr)) auto;
   border-top: 0;
   color: rgb(255 255 255 / 38%);
 }
 
 .hero-stage .terminal-stat span { color: rgb(255 255 255 / 20%); }
 .hero-stage .terminal-stat strong { color: rgb(255 255 255 / 52%); }
+
+.hero-stage .terminal-stat--identity {
+  gap: 8px;
+}
+
+.hero-stage .terminal-stat--identity span {
+  color: #56c6e8;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.hero-stage .terminal-stat--identity strong {
+  color: #f4f3ef;
+  font-size: clamp(14px, 1.05vw, 18px);
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
 .hero-stage .scroll-cue { color: #f4f3ef; font-weight: 800; text-shadow: 2px 2px 0 #000; }
 .hero-stage .scroll-cue span { border-color: #f4f3ef; }
 .hero-stage .hero-index { color: rgb(255 255 255 / 22%); }
