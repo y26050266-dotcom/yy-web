@@ -68,22 +68,6 @@ export default function Home() {
           <div className="hero-star-rail hero-star-rail--top" aria-hidden="true">
             ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦
           </div>
-            <video
-              className="hero-media"
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster="/project-monolith.png"
-              aria-hidden="true"
-            >
-              <source src="/hero-loop.mp4" type="video/mp4" />
-            </video>
-            <img
-              className="hero-console"
-              src="/hero-console-v1.png"
-              alt="复古未来风格的便携游戏机插画"
-            />
             <div className="hero-shade" />
             <div className="scanlines" aria-hidden="true" />
 
@@ -105,31 +89,41 @@ export default function Home() {
             <div className="hero-content hero-shell">
               <div className="hero-kicker">
                 <span>TOP SCORE: 002026</span>
-                <span>PROJECTS:000003 · SKILLS:000004</span>
+                <span>PLAYS:000003 · SKILLS:000004</span>
               </div>
 
               <div className="hero-title-block">
-                <p className="hero-year">PLAYER 01 <span>YANG YING / 杨颖</span></p>
+                <div className="arcade-scoreboard">
+                  <strong>TOP : 002026</strong>
+                  <span>PLAYS : 000003</span>
+                  <span>SKILLS : 000004</span>
+                </div>
                 <div className="arcade-title-panel">
                   <i className="panel-screw panel-screw--tl" aria-hidden="true" />
                   <i className="panel-screw panel-screw--tr" aria-hidden="true" />
                   <i className="panel-screw panel-screw--bl" aria-hidden="true" />
                   <i className="panel-screw panel-screw--br" aria-hidden="true" />
-                  <h1>
-                    <span>PORT</span>
-                    <span>FOLIO</span>
+                  <p className="panel-player">YANG YING · PORTFOLIO 2026</p>
+                  <h1 aria-label="PORTFOLIO">
+                    <span className="arcade-word">
+                      <i>P</i><i>O</i><i>R</i><i>T</i>
+                    </span>
+                    <span className="arcade-word">
+                      <i>F</i><i>O</i><i>L</i><i>I</i><i>O</i>
+                    </span>
                   </h1>
                   <div className="title-colorbar" aria-hidden="true">
                     <span /><span /><span /><span /><span /><span />
                   </div>
                 </div>
-                <p className="hero-about">GAME ENVIRONMENT ARTIST / AI DESIGNER</p>
-                <p className="hero-role">
-                  GAME ENVIRONMENT / AI VISUAL<br />3D MODELING / VISUAL DESIGN
-                </p>
-                <a className="hero-enter" href="#projects">
-                  VIEW SELECTED WORK <span>↘</span>
-                </a>
+                <h2 className="arcade-subtitle">SELECT YOUR LEVEL</h2>
+                <nav className="arcade-menu" aria-label="首屏快捷导航">
+                  <a href="#profile"><b>01</b><span>PROFILE</span></a>
+                  <a href="#projects"><b>02</b><span>PROJECTS</span></a>
+                  <a href="#strengths"><b>03</b><span>SKILLS</span></a>
+                  <a href="#contact"><b>04</b><span>CONTACT</span></a>
+                </nav>
+                <p className="hero-role">GAME ENVIRONMENT · AI VISUAL · 3D MODELING · VISUAL DESIGN</p>
               </div>
 
               <div className="hero-bottom">
@@ -146,7 +140,7 @@ export default function Home() {
                   <strong>GAME ART DESIGN · MA</strong>
                 </div>
                 <a className="scroll-cue" href="#profile">
-                  SCROLL TO EXPLORE <span>↓</span>
+                  PRESS START <span>↓</span>
                 </a>
               </div>
             </div>
