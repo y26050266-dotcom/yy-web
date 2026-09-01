@@ -2052,14 +2052,15 @@ a {
 }
 
 .projects-intro h2 {
-  color: #20262b;
-  text-shadow: 2px 3px 0 rgb(255 255 255 / 22%);
-}
-
-.projects-intro h2 span {
-  color: #4f747e;
-  -webkit-text-stroke: 1px #20262b;
-  text-shadow: 3px 3px 0 #31383d;
+  color: #30454d;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: clamp(44px, 4.4vw, 76px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
 }
 
 .projects-intro p {
@@ -2117,14 +2118,15 @@ a {
 }
 
 .strengths-intro h2 {
-  color: #d8d9d4;
-  text-shadow: 3px 3px 0 #090a0b;
-}
-
-.strengths-intro h2 span {
-  color: #7f9e89;
-  -webkit-text-stroke: 1px #15171a;
-  text-shadow: 3px 3px 0 #090a0b;
+  color: #b3beb7;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: clamp(32px, 3.7vw, 64px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
 }
 .strengths-intro p { color: rgb(255 255 255 / 58%); font-family: var(--font-geist-mono), monospace; }
 

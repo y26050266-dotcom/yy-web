@@ -248,11 +248,7 @@ export default function Home() {
           </div>
 
           <div className="projects-intro">
-            <h2>
-              精选
-              <br />
-              <span>作品</span>
-            </h2>
+            <h2>精选作品</h2>
             <p>
               当前作品图为基础版概念占位，用于确认网站的视觉方向与版式。
               后续替换为你的真实项目图、过程图与项目说明。
@@ -292,11 +288,7 @@ export default function Home() {
           </div>
 
           <div className="strengths-intro">
-            <h2>
-              复合型
-              <br />
-              <span>创意工具箱</span>
-            </h2>
+            <h2>复合型视觉创作能力</h2>
             <p>
               从场景资产到最终画面，我在技术执行与视觉表达之间建立连接，
               让工具服务于氛围、叙事与清晰的设计意图。
