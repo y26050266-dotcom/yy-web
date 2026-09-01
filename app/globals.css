@@ -732,6 +732,217 @@ a {
 
 .hero-stage .hero-index span { color: rgb(246 240 229 / 24%); }
 
+/* Clear arcade HUD refinement */
+.hero-stage {
+  border-color: #45494f;
+  background:
+    radial-gradient(circle at 30% 46%, rgb(255 255 255 / 4%), transparent 32%),
+    linear-gradient(145deg, #15171a 0%, #0c0d0f 100%);
+  box-shadow: 0 28px 90px rgb(0 0 0 / 52%), inset 0 0 90px rgb(0 0 0 / 42%);
+}
+
+.hero-star-rail {
+  height: 18px;
+  color: #70747a;
+  background: #25282c;
+  border-bottom: 1px solid #555a60;
+  font-size: 8px;
+  letter-spacing: clamp(16px, 2.8vw, 48px);
+}
+
+.hero-star-rail--bottom {
+  height: 9px;
+  color: transparent;
+  border: 0;
+  background: linear-gradient(90deg, #56c6e8 0 16.66%, #8a68e8 16.66% 33.33%, #f04a2f 33.33% 50%, #df5fd6 50% 66.66%, #63d567 66.66% 83.33%, #f1c53d 83.33% 100%);
+}
+
+.hero-stage .site-header {
+  height: 84px;
+  margin-top: 18px;
+  border-bottom-color: rgb(255 255 255 / 14%);
+}
+
+.hero-stage .terminal-brand {
+  color: #f3f0e9;
+  font-weight: 760;
+}
+
+.hero-stage .terminal-brand small { color: rgb(255 255 255 / 38%); }
+.hero-stage .main-nav { color: rgb(255 255 255 / 64%); }
+.hero-stage .main-nav a { position: relative; padding-bottom: 5px; }
+.hero-stage .main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background: #56c6e8;
+  transition: right 180ms ease;
+}
+.hero-stage .main-nav a:nth-child(2)::after { background: #df5fd6; }
+.hero-stage .main-nav a:nth-child(3)::after { background: #63d567; }
+.hero-stage .main-nav a:hover { color: #fff; }
+.hero-stage .main-nav a:hover::after { right: 0; }
+
+.hero-stage .contact-pill {
+  border-color: #f3f0e9;
+  color: #f3f0e9;
+  font-weight: 720;
+}
+
+.hero-stage .contact-pill:hover {
+  border-color: #f1c53d;
+  background: #f1c53d;
+  color: #101114;
+}
+
+.hero-console {
+  right: -4%;
+  top: 10%;
+  width: min(61vw, 1080px);
+  height: 82%;
+  opacity: 0.77;
+  filter: grayscale(0.46) saturate(0.78) contrast(1.08) brightness(0.68);
+}
+
+.hero-stage .hero-content {
+  height: calc(100% - 128px);
+  padding: 16px 0 36px;
+}
+
+.hero-stage .hero-kicker {
+  color: rgb(255 255 255 / 48%);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+}
+
+.hero-stage .hero-kicker span:first-child { color: #f3f0e9; }
+
+.hero-stage .hero-title-block {
+  width: min(48%, 680px);
+  margin-top: -1vh;
+}
+
+.hero-stage .hero-year {
+  margin: 0 0 10px 14px;
+  color: rgb(255 255 255 / 62%);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.hero-year span {
+  margin-left: 12px;
+  color: #101114;
+  background: #f1c53d;
+}
+
+.arcade-title-panel {
+  position: relative;
+  width: min(100%, 590px);
+  padding: clamp(24px, 2.3vw, 42px) clamp(26px, 3vw, 50px) clamp(22px, 2.2vw, 38px);
+  border: 3px solid #17191d;
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(180deg, rgb(255 255 255 / 5%) 0 2px, transparent 2px 5px),
+    linear-gradient(180deg, #737981 0%, #4e535a 56%, #666c73 100%);
+  box-shadow:
+    0 0 0 2px #989ea4,
+    0 0 0 5px #1a1c20,
+    10px 12px 0 rgb(0 0 0 / 42%),
+    inset 0 2px 0 rgb(255 255 255 / 24%),
+    inset 0 -3px 0 rgb(0 0 0 / 30%);
+}
+
+.panel-screw {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #1b1d21;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d0d4d8, #5c6269);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 18%);
+}
+
+.panel-screw::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 4px;
+  height: 1px;
+  rotate: -35deg;
+  background: #25282c;
+}
+
+.panel-screw--tl { left: 9px; top: 9px; }
+.panel-screw--tr { right: 9px; top: 9px; }
+.panel-screw--bl { left: 9px; bottom: 9px; }
+.panel-screw--br { right: 9px; bottom: 9px; }
+
+.hero-stage .arcade-title-panel h1 {
+  align-items: flex-start;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(76px, 7.3vw, 132px);
+  line-height: 0.69;
+  letter-spacing: -0.035em;
+  transform: none;
+}
+
+.hero-stage .arcade-title-panel h1 span {
+  color: #f6f4ef;
+  filter: drop-shadow(4px 5px 0 #191b1f);
+}
+
+.title-colorbar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 7px;
+  margin-top: 24px;
+}
+
+.title-colorbar span { height: 7px; border: 1px solid rgb(0 0 0 / 40%); }
+.title-colorbar span:nth-child(1) { background: #56c6e8; }
+.title-colorbar span:nth-child(2) { background: #8a68e8; }
+.title-colorbar span:nth-child(3) { background: #f04a2f; }
+.title-colorbar span:nth-child(4) { background: #df5fd6; }
+.title-colorbar span:nth-child(5) { background: #63d567; }
+.title-colorbar span:nth-child(6) { background: #f1c53d; }
+
+.hero-about {
+  margin: 22px 0 0 8px;
+  color: #111316;
+  background: #63d567;
+  font-size: 9px;
+  font-weight: 760;
+}
+
+.hero-stage .hero-role {
+  margin: 20px 0 0 10px;
+  color: #f3f0e9;
+  font-size: clamp(10px, 0.85vw, 13px);
+  font-weight: 620;
+  line-height: 1.65;
+  letter-spacing: 0.12em;
+}
+
+.hero-stage .hero-enter {
+  margin: 18px 0 0 10px;
+  color: #56c6e8;
+  border-color: rgb(86 198 232 / 45%);
+  font-weight: 700;
+}
+
+.hero-stage .hero-enter:hover { color: #fff; border-color: #fff; }
+.hero-stage .hero-bottom { border-top-color: rgb(255 255 255 / 14%); }
+.hero-stage .terminal-stat span { color: rgb(255 255 255 / 28%); }
+.hero-stage .terminal-stat strong { color: rgb(255 255 255 / 70%); }
+.hero-stage .scroll-cue { color: rgb(255 255 255 / 64%); }
+.hero-stage .scroll-cue span { border-color: rgb(255 255 255 / 28%); }
+.hero-stage .hero-index { color: rgb(255 255 255 / 30%); }
+
 .section-pad {
   padding: clamp(110px, 10vw, 190px) 0;
 }
@@ -1335,9 +1546,11 @@ a {
     letter-spacing: 12px;
   }
 
+  .hero-star-rail--bottom { height: 7px; }
+
   .hero-console {
     right: -50%;
-    top: 14%;
+    top: 12%;
     width: 130%;
     height: 52%;
     opacity: 0.52;
@@ -1397,7 +1610,22 @@ a {
 
   .hero-stage .hero-title-block {
     width: 100%;
-    margin-top: 8vh;
+    margin-top: 5vh;
+  }
+
+  .arcade-title-panel {
+    width: min(86%, 430px);
+    padding: 22px 25px 20px;
+  }
+
+  .hero-stage .arcade-title-panel h1 {
+    font-size: clamp(60px, 18vw, 90px);
+    line-height: 0.72;
+  }
+
+  .title-colorbar {
+    gap: 4px;
+    margin-top: 17px;
   }
 
   .hero h1 {

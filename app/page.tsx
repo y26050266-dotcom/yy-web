@@ -89,8 +89,8 @@ export default function Home() {
 
             <header className="site-header hero-shell">
               <a className="terminal-brand" href="#top" aria-label="回到首页">
-                <span>YY® / 2026</span>
-                <small>GAME ART &amp; VISUAL DESIGN</small>
+                <span>YY_OS / PLAYER 01</span>
+                <small>PORTFOLIO SYSTEM · 2026</small>
               </a>
               <nav className="main-nav" aria-label="主要导航">
                 <a href="#profile">PROFILE</a>
@@ -104,17 +104,26 @@ export default function Home() {
 
             <div className="hero-content hero-shell">
               <div className="hero-kicker">
-                <span>NICE TO E-MEET YOU!</span>
-                <span>SHENZHEN, CN · AVAILABLE FOR WORK</span>
+                <span>TOP SCORE: 002026</span>
+                <span>PROJECTS:000003 · SKILLS:000004</span>
               </div>
 
               <div className="hero-title-block">
-                <p className="hero-year">DESIGN PORTFOLIO <span>20—26</span></p>
-                <h1>
-                  <span>PORT</span>
-                  <span>FOLIO</span>
-                </h1>
-                <p className="hero-about">ABOUT YANG YING / 杨颖</p>
+                <p className="hero-year">PLAYER 01 <span>YANG YING / 杨颖</span></p>
+                <div className="arcade-title-panel">
+                  <i className="panel-screw panel-screw--tl" aria-hidden="true" />
+                  <i className="panel-screw panel-screw--tr" aria-hidden="true" />
+                  <i className="panel-screw panel-screw--bl" aria-hidden="true" />
+                  <i className="panel-screw panel-screw--br" aria-hidden="true" />
+                  <h1>
+                    <span>PORT</span>
+                    <span>FOLIO</span>
+                  </h1>
+                  <div className="title-colorbar" aria-hidden="true">
+                    <span /><span /><span /><span /><span /><span />
+                  </div>
+                </div>
+                <p className="hero-about">GAME ENVIRONMENT ARTIST / AI DESIGNER</p>
                 <p className="hero-role">
                   GAME ENVIRONMENT / AI VISUAL<br />3D MODELING / VISUAL DESIGN
                 </p>
