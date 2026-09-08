@@ -240,9 +240,18 @@ export default function Home() {
             <div className="profile-story">
               <p className="overline">GAME ART · AI VISUAL · DESIGN</p>
               <h2>
-                我用<span className="accent">空间、材质与光</span>
-                <br />
-                构建可以被感受的<span className="world-word">世界</span>
+                <span
+                  className="profile-title-line"
+                  data-text="我用空间、材质与光"
+                >
+                  我用<span className="accent">空间、材质与光</span>
+                </span>
+                <span
+                  className="profile-title-line"
+                  data-text="构建可以被感受的世界"
+                >
+                  构建可以被感受的<span className="world-word">世界</span>
+                </span>
               </h2>
               <p className="lead">
                 目前就读于英国赫特福德大学游戏美术设计硕士，拥有动画与游戏美术背景。
