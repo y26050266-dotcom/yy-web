@@ -26,6 +26,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Fusion Pixel 8 SC';
+  src: url('/fonts/fusion-pixel-8px-zh-hans.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -2214,40 +2222,15 @@ a {
   width: max-content;
   max-width: 100%;
   color: #30454d;
-  font-family: 'Noto Sans SC Title', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
-  font-size: clamp(54px, 6vw, 92px);
-  font-weight: 900;
-  line-height: 0.9;
-  letter-spacing: -0.13em;
+  font-family: 'Fusion Pixel 8 SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  font-size: clamp(56px, 5.6vw, 80px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.04em;
   white-space: nowrap;
-  transform: skewX(-9deg) scaleX(1.12);
-  transform-origin: left center;
+  font-synthesis: none;
   -webkit-text-stroke: 0;
-  text-shadow: 4px 4px 0 rgb(8 12 15 / 18%);
-}
-
-.projects-intro h2::after {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  color: #91969a;
-  content: attr(data-text);
-  clip-path: polygon(
-    0 38%,
-    31% 31%,
-    34% 37%,
-    68% 29%,
-    71% 34%,
-    100% 26%,
-    100% 35%,
-    72% 43%,
-    69% 38%,
-    35% 46%,
-    32% 40%,
-    0 48%
-  );
-  pointer-events: none;
-  text-shadow: none;
+  text-shadow: 4px 4px 0 rgb(8 12 15 / 16%);
 }
 
 .projects-intro p {
@@ -3201,7 +3184,7 @@ a {
   }
 
   .projects-intro h2 {
-    font-size: clamp(46px, 14vw, 64px);
+    font-size: clamp(48px, 14vw, 64px);
   }
 
   .portrait-panel {
