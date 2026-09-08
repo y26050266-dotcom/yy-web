@@ -27,8 +27,8 @@
 }
 
 @font-face {
-  font-family: 'Fusion Pixel 8 SC';
-  src: url('/fonts/fusion-pixel-8px-zh-hans.woff2') format('woff2');
+  font-family: 'Fusion Pixel 12 SC';
+  src: url('/fonts/fusion-pixel-12px-zh-hans.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -2221,16 +2221,16 @@ a {
   position: relative;
   width: max-content;
   max-width: 100%;
-  color: #30454d;
-  font-family: 'Fusion Pixel 8 SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  color: #182a31;
+  font-family: 'Fusion Pixel 12 SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
   font-size: clamp(56px, 5.6vw, 80px);
   font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.04em;
+  line-height: 1.05;
+  letter-spacing: 0.08em;
   white-space: nowrap;
   font-synthesis: none;
   -webkit-text-stroke: 0;
-  text-shadow: 4px 4px 0 rgb(8 12 15 / 16%);
+  text-shadow: 2px 2px 0 rgb(255 255 255 / 22%);
 }
 
 .projects-intro p {
