@@ -306,7 +306,9 @@ export default function Home() {
           </div>
 
           <div className="projects-intro">
-            <h2>精选作品</h2>
+            <h2>
+              精选作<span className="pixel-boost">品</span>
+            </h2>
           </div>
 
           <div className="project-grid">
