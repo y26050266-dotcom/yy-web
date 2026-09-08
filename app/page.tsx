@@ -309,12 +309,6 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact">
-        <img
-          className="contact-image"
-          src="/project-memory.png"
-          alt=""
-          aria-hidden="true"
-        />
         <div className="contact-wash" />
         <div className="contact-shell shell">
           <div className="section-heading section-heading--contact">
