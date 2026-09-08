@@ -1917,7 +1917,7 @@ a {
   z-index: -2;
   pointer-events: none;
   opacity: 0.09;
-  background: url('/pixel-lab-background.png') center top / min(1280px, 100%) auto repeat-y;
+  background: url('/pixel-lab-background.png') center top / 100% auto repeat-y;
   filter: grayscale(0.28) saturate(0.42) brightness(0.72) contrast(1.12);
 }
 
