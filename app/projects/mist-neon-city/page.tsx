@@ -24,31 +24,26 @@ const gallery = [
     src: '/projects/mist-neon-city/colorful-01.jpg',
     alt: '云雾与霓虹包围的未来城市全景',
     label: '彩色氛围 / 01',
-    featured: true,
   },
   {
     src: '/projects/mist-neon-city/colorful-02.jpg',
     alt: '霓虹广告牌与漂浮建筑构成的未来城市视角',
     label: '霓虹构图 / 02',
-    featured: false,
   },
   {
     src: '/projects/mist-neon-city/shadow-01.png',
     alt: '强烈明暗对比中的未来城市建筑体块',
     label: '光影研究 / 03',
-    featured: false,
   },
   {
     src: '/projects/mist-neon-city/shadow-02.png',
     alt: '被体积光切割的黑色城市天际线',
     label: '城市剪影 / 04',
-    featured: false,
   },
   {
     src: '/projects/mist-neon-city/shadow-03.png',
     alt: '冷色光线中的高密度未来建筑群',
     label: '体积层次 / 05',
-    featured: false,
   },
 ];
 
@@ -94,13 +89,13 @@ export default function MistNeonCityProject() {
           </p>
         </div>
 
-        <div className="project-detail-gallery-grid">
-          {gallery.map((image) => (
+        <div className="project-detail-gallery-grid mist-neon-gallery-grid">
+          {gallery.map((image, index) => (
             <figure
-              className={`project-detail-shot${image.featured ? ' project-detail-shot--featured' : ''}`}
+              className={`project-detail-shot mist-neon-shot mist-neon-shot--${index < 2 ? 'color' : 'shadow'}`}
               key={image.src}
             >
-              <img src={image.src} alt={image.alt} loading={image.featured ? 'eager' : 'lazy'} />
+              <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} />
               <figcaption>{image.label}</figcaption>
             </figure>
           ))}

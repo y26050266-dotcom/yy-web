@@ -2697,6 +2697,18 @@ a {
   justify-content: flex-start;
 }
 
+.mist-neon-gallery-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.mist-neon-shot--color {
+  grid-column: span 3;
+}
+
+.mist-neon-shot--shadow {
+  grid-column: span 2;
+}
+
 .project-detail-footer {
   min-height: 110px;
   padding: 28px 0 40px;
@@ -3334,6 +3346,11 @@ a {
   .project-detail-gallery-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .mist-neon-shot--color,
+  .mist-neon-shot--shadow {
+    grid-column: 1;
   }
 
   .project-detail-footer {
