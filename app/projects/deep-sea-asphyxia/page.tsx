@@ -84,7 +84,7 @@ export default function DeepSeaAsphyxiaProject() {
         <div className="project-detail-gallery-intro">
           <h2 id="gallery-title">深海·窒息</h2>
           <div className="project-detail-gallery-copy">
-            <p>以废弃机械、生物剪影与幽暗海底共同构成压迫性的叙事空间，通过冷色体积光、有限视野与深水雾感强化未知和窒息感。</p>
+            <p>以海洋污染为主题，通过被海洋污染导致变异的机械鱼与海洋垃圾，以及幽暗光影构建压迫性的深海环境，呈现污染对海洋生态造成的持续伤害。</p>
             <div className="project-detail-software" aria-label="项目使用软件">
               <span>SOFTWARE / 使用软件</span>
               <ul>
