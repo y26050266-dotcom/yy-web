@@ -82,7 +82,7 @@ export default function MistNeonCityProject() {
         aria-labelledby="mist-neon-gallery-title"
       >
         <div className="project-detail-gallery-intro">
-          <h2 id="mist-neon-gallery-title">雾界霓城</h2>
+          <h2 id="mist-neon-gallery-title">雾海、霓虹<br />与未来都市</h2>
           <div className="project-detail-gallery-copy">
             <p>
               通过高密度建筑体块、漂浮雾层与冷暖霓虹组织空间，在彩色氛围和黑白光影之间，
