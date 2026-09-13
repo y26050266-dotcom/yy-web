@@ -83,10 +83,18 @@ export default function MistNeonCityProject() {
       >
         <div className="project-detail-gallery-intro">
           <h2 id="mist-neon-gallery-title">雾界霓城</h2>
-          <p>
-            通过高密度建筑体块、漂浮雾层与冷暖霓虹组织空间，在彩色氛围和黑白光影之间，
-            探索一座介于现实与虚拟之间的未来城市。
-          </p>
+          <div className="project-detail-gallery-copy">
+            <p>
+              通过高密度建筑体块、漂浮雾层与冷暖霓虹组织空间，在彩色氛围和黑白光影之间，
+              探索一座介于现实与虚拟之间的未来城市。
+            </p>
+            <div className="project-detail-software" aria-label="项目使用软件">
+              <span>SOFTWARE / 使用软件</span>
+              <ul>
+                <li>Blender</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="project-detail-gallery-grid mist-neon-gallery-grid">
