@@ -21,9 +21,10 @@ export const metadata: Metadata = {
 
 const gallery = [
   {
-    src: '/projects/jungle-temple/hero.png',
-    alt: '竹林深处被自然侵蚀的中式古寺三维环境主视觉',
-    label: '主视觉 / 01',
+    src: '/projects/jungle-temple/jungle-temple-film.mp4',
+    poster: '/projects/jungle-temple/hero.png',
+    alt: '丛林古庙三维环境项目展示视频',
+    label: '项目影像 / 01',
     featured: true,
   },
   {
@@ -92,7 +93,23 @@ export default function JungleTempleProject() {
               className={`project-detail-shot${image.featured ? ' project-detail-shot--featured' : ''}`}
               key={image.src}
             >
-              <img src={image.src} alt={image.alt} loading="lazy" />
+              {'poster' in image ? (
+                <video
+                  aria-label={image.alt}
+                  autoPlay
+                  controls
+                  loop
+                  muted
+                  playsInline
+                  poster={image.poster}
+                  preload="metadata"
+                >
+                  <source src={image.src} type="video/mp4" />
+                  您的浏览器暂不支持视频播放。
+                </video>
+              ) : (
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              )}
               <figcaption>{image.label}</figcaption>
             </figure>
           ))}
