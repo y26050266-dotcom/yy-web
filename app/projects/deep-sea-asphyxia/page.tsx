@@ -82,7 +82,7 @@ export default function DeepSeaAsphyxiaProject() {
 
       <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-labelledby="gallery-title">
         <div className="project-detail-gallery-intro">
-          <h2 id="gallery-title">深海·窒息</h2>
+          <h2 id="gallery-title">污染、异变<br />与深海的窒息</h2>
           <div className="project-detail-gallery-copy">
             <p>以海洋污染为主题，通过被海洋污染导致变异的机械鱼与海洋垃圾，以及幽暗光影构建压迫性的深海环境，呈现污染对海洋生态造成的持续伤害。</p>
             <div className="project-detail-software" aria-label="项目使用软件">
