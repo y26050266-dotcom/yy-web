@@ -74,8 +74,28 @@ export default function EnvironmentProjects() {
           </div>
         </a>
 
+        <a className="project-category-card" href="/projects/mist-neon-city">
+          <div className="project-category-card-media">
+            <img
+              src="/projects/mist-neon-city/colorful-01.jpg"
+              alt="云雾与霓虹包围的未来城市三维环境场景"
+            />
+            <span>3D ENVIRONMENT / 02</span>
+          </div>
+          <div className="project-category-card-copy">
+            <span className="project-category-card-index">PROJECT / 02</span>
+            <h2>雾界霓城</h2>
+            <p className="project-category-card-tags">体积构成 · 光影研究 · 氛围叙事</p>
+            <p>
+              以漂浮在云雾中的高密度未来都市为主题，通过霓虹色彩、建筑剪影与体积光
+              塑造介于现实和虚拟之间的城市空间。
+            </p>
+            <span className="project-category-card-cta">查看独立详情页 ↗</span>
+          </div>
+        </a>
+
         <p className="project-category-note">
-          后续新增的 3D 环境作品会依次出现在这里，并分别连接至各自的独立详情页。
+          当前收录的每项 3D 环境作品均可进入各自的独立详情页。
         </p>
       </section>
 
