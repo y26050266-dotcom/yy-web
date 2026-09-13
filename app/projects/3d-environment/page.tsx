@@ -94,6 +94,26 @@ export default function EnvironmentProjects() {
           </div>
         </a>
 
+        <a className="project-category-card" href="/projects/deep-sea-asphyxia">
+          <div className="project-category-card-media">
+            <img
+              src="/projects/deep-sea-asphyxia/scene-01.png"
+              alt="幽暗深海中游弋生物与废弃机械构成的三维环境场景"
+            />
+            <span>3D ENVIRONMENT / 03</span>
+          </div>
+          <div className="project-category-card-copy">
+            <span className="project-category-card-index">PROJECT / 03</span>
+            <h2>深海·窒息</h2>
+            <p className="project-category-card-tags">深海氛围 · 环境叙事 · 场景搭建</p>
+            <p>
+              以幽暗海底、废弃机械与游弋生物构成压迫性的深海环境，
+              通过冷色体积光与有限视野强化窒息感和未知感。
+            </p>
+            <span className="project-category-card-cta">查看独立详情页 ↗</span>
+          </div>
+        </a>
+
         <p className="project-category-note">
           当前收录的每项 3D 环境作品均可进入各自的独立详情页。
         </p>
