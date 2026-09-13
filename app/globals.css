@@ -2648,6 +2648,44 @@ a {
   line-height: 2;
 }
 
+.project-detail-gallery-copy {
+  min-width: 0;
+}
+
+.project-detail-software {
+  margin-top: 24px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(103 181 200 / 38%);
+}
+
+.project-detail-software > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #67b5c8;
+  font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+}
+
+.project-detail-software ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.project-detail-software li {
+  padding: 7px 10px;
+  border: 1px solid #5f676d;
+  color: rgb(255 255 255 / 76%);
+  background: rgb(30 34 38 / 80%);
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
 .project-detail-no-break {
   white-space: nowrap;
 }
