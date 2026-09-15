@@ -2736,6 +2736,16 @@ a {
   aspect-ratio: 16 / 9;
 }
 
+.project-detail-prop-rail {
+  grid-column: 1 / -1;
+}
+
+.project-detail-prop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
 .project-detail-closeups {
   padding: clamp(72px, 8vw, 120px) 0;
 }
@@ -2777,7 +2787,7 @@ a {
   }
 
   .project-detail-page--prop .project-detail-gallery {
-    width: min(1380px, calc(100% - 8px));
+    width: min(1800px, calc(100% - 24px));
     padding: clamp(68px, 7vw, 96px) 0;
   }
 
@@ -2797,16 +2807,22 @@ a {
   }
 
   .project-detail-page--prop .project-detail-gallery-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .project-detail-page--prop .project-detail-shot--prop:not(.project-detail-shot--featured) img {
-    scale: 1.9;
+  .project-detail-page--prop .project-detail-prop-rail {
+    overflow-x: auto;
+    padding: 6px 5px 18px;
+    scrollbar-color: #747c82 #0b0d0f;
+    scrollbar-width: thin;
   }
 
-  .project-detail-page--prop .project-detail-shot--prop:not(.project-detail-shot--featured):hover img {
-    scale: 1.96;
+  .project-detail-page--prop .project-detail-prop-grid {
+    width: max-content;
+    margin-inline: auto;
+    grid-template-columns: repeat(4, 440px);
+    gap: 20px;
   }
 
   .project-detail-page--prop .project-detail-shot {
@@ -2822,6 +2838,10 @@ a {
     object-fit: contain;
   }
 
+  .project-detail-page--prop .project-detail-shot:hover img {
+    scale: 1;
+  }
+
   .project-detail-page--prop .project-detail-shot figcaption {
     min-height: 46px;
     padding: 10px 14px;
@@ -2830,7 +2850,7 @@ a {
   }
 
   .project-detail-page--prop .project-detail-closeups {
-    width: min(1380px, calc(100% - 8px));
+    width: min(1800px, calc(100% - 24px));
     padding: 54px 0 84px;
   }
 
@@ -2840,7 +2860,12 @@ a {
   }
 
   .project-detail-page--prop .project-detail-closeup-grid {
-    gap: 10px;
+    grid-template-columns: repeat(4, 440px);
+    gap: 20px;
+    overflow-x: auto;
+    padding: 6px 5px 18px;
+    scrollbar-color: #747c82 #0b0d0f;
+    scrollbar-width: thin;
   }
 }
 
@@ -3500,6 +3525,11 @@ a {
   }
 
   .project-detail-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-detail-prop-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }

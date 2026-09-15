@@ -114,15 +114,19 @@ export default function SphericalScoutDroneProject() {
             <figcaption>360° 旋转展示 / 01</figcaption>
           </figure>
 
-          {gallery.map((item) => (
-            <figure
-              className="project-detail-shot project-detail-shot--prop"
-              key={item.src}
-            >
-              <img src={item.src} alt={item.alt} loading="lazy" />
-              <figcaption>{item.label}</figcaption>
-            </figure>
-          ))}
+          <div className="project-detail-prop-rail">
+            <div className="project-detail-prop-grid">
+              {gallery.map((item) => (
+                <figure
+                  className="project-detail-shot project-detail-shot--prop"
+                  key={item.src}
+                >
+                  <img src={item.src} alt={item.alt} loading="lazy" />
+                  <figcaption>{item.label}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
