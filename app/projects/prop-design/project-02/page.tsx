@@ -55,8 +55,8 @@ const detailGallery = [
   },
   {
     src: '/projects/prop-design/drone-controller/detail-joystick.png',
-    alt: '无人机控制器操控摇杆与散热口细节',
-    label: '摇杆与散热口 / 04',
+    alt: '无人机控制器操控摇杆与麦克风细节',
+    label: '摇杆与麦克风 / 04',
   },
 ];
 
