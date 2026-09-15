@@ -69,7 +69,7 @@ const responsibilities = ['造型设计', '硬表面建模', '材质表现', '�
 
 export default function SphericalScoutDroneProject() {
   return (
-    <main className="project-detail-page">
+    <main className="project-detail-page project-detail-page--prop">
       <header className="project-detail-nav shell">
         <a href="/projects/prop-design">← 返回道具设计</a>
         <div>
