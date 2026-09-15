@@ -1,4 +1,5 @@
 import PixelBlast from './PixelBlast';
+import BorderGlow from './BorderGlow';
 
 type ProjectItem = {
   index: string;
@@ -209,100 +210,113 @@ export default function Home() {
 
           <div className="profile-grid">
             <div className="profile-side">
-              <figure className="portrait-panel">
-                <img
-                  src="/avatar.jpg"
-                  alt="杨颖个人照片"
-                  width="300"
-                  height="400"
-                />
-                <figcaption>
-                  <span>YANG YING</span>
-                  <span>23 / SHENZHEN</span>
-                </figcaption>
-              </figure>
+              <BorderGlow className="profile-glow-card profile-glow-card--portrait" animated>
+                <figure className="portrait-panel">
+                  <img
+                    src="/avatar.jpg"
+                    alt="杨颖个人照片"
+                    width="300"
+                    height="400"
+                  />
+                  <figcaption>
+                    <span>YANG YING</span>
+                    <span>23 / SHENZHEN</span>
+                  </figcaption>
+                </figure>
+              </BorderGlow>
 
-              <aside className="skills-panel" aria-labelledby="skills-panel-title">
-                <div className="skills-panel__header">
-                  <span id="skills-panel-title">SKILLSET / 技能与软件</span>
-                  <small>04 类目</small>
-                </div>
-                <div className="skill-groups">
-                  <div className="skill-group">
-                    <b>01</b>
-                    <div>
-                      <h3>3D 设计</h3>
-                      <p>Blender · Maya · ZBrush · Substance 3D Painter · Procreate</p>
+              <BorderGlow className="profile-glow-card profile-glow-card--skills" animated>
+                <aside className="skills-panel" aria-labelledby="skills-panel-title">
+                  <div className="skills-panel__header">
+                    <span id="skills-panel-title">SKILLSET / 技能与软件</span>
+                    <small>04 类目</small>
+                  </div>
+                  <div className="skill-groups">
+                    <div className="skill-group">
+                      <b>01</b>
+                      <div>
+                        <h3>3D 设计</h3>
+                        <p>Blender · Maya · ZBrush · Substance 3D Painter · Procreate</p>
+                      </div>
+                    </div>
+                    <div className="skill-group">
+                      <b>02</b>
+                      <div>
+                        <h3>AIGC</h3>
+                        <p>Midjourney · 即梦 · 可灵 · ChatGPT · Nano Banana</p>
+                      </div>
+                    </div>
+                    <div className="skill-group">
+                      <b>03</b>
+                      <div>
+                        <h3>新媒体运营</h3>
+                        <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营 · Canva</p>
+                      </div>
+                    </div>
+                    <div className="skill-group">
+                      <b>04</b>
+                      <div>
+                        <h3>视频制作</h3>
+                        <p>剪映 · 短视频剪辑 · 基础视觉包装</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="skill-group">
-                    <b>02</b>
-                    <div>
-                      <h3>AIGC</h3>
-                      <p>Midjourney · 即梦 · 可灵 · ChatGPT · Nano Banana</p>
-                    </div>
-                  </div>
-                  <div className="skill-group">
-                    <b>03</b>
-                    <div>
-                      <h3>新媒体运营</h3>
-                      <p>抖音 · Instagram · 内容策划 · 摄影 · 短视频运营 · Canva</p>
-                    </div>
-                  </div>
-                  <div className="skill-group">
-                    <b>04</b>
-                    <div>
-                      <h3>视频制作</h3>
-                      <p>剪映 · 短视频剪辑 · 基础视觉包装</p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
+                </aside>
+              </BorderGlow>
             </div>
 
-            <div className="profile-story">
-              <p className="overline">GAME ART · AI VISUAL · DESIGN</p>
-              <h2>
-                <span
-                  className="profile-title-line"
-                  data-text="我用空间、材质与光"
-                >
-                  我用<span className="accent">空间、材质与光</span>
-                </span>
-                <span
-                  className="profile-title-line"
-                  data-text="构建可以被感受的世界"
-                >
-                  构建可以被感受的<span className="world-word">世界</span>
-                </span>
-              </h2>
-              <p className="lead">
-                目前就读于英国赫特福德大学游戏美术设计硕士，拥有动画与游戏美术背景。
-                我关注环境资产、PBR 材质与灯光叙事，也在持续探索 AIGC 与 3D
-                设计结合的视觉工作流。
-              </p>
+            <BorderGlow
+              className="profile-glow-card profile-glow-card--story"
+              backgroundColor="#7d8389"
+              glowColor="192 74 66"
+              glowIntensity={0.78}
+              fillOpacity={0.28}
+              animated
+            >
+              <div className="profile-story">
+                <p className="overline">GAME ART · AI VISUAL · DESIGN</p>
+                <h2>
+                  <span
+                    className="profile-title-line"
+                    data-text="我用空间、材质与光"
+                  >
+                    我用<span className="accent">空间、材质与光</span>
+                  </span>
+                  <span
+                    className="profile-title-line"
+                    data-text="构建可以被感受的世界"
+                  >
+                    构建可以被感受的<span className="world-word">世界</span>
+                  </span>
+                </h2>
+                <p className="lead">
+                  目前就读于英国赫特福德大学游戏美术设计硕士，拥有动画与游戏美术背景。
+                  我关注环境资产、PBR 材质与灯光叙事，也在持续探索 AIGC 与 3D
+                  设计结合的视觉工作流。
+                </p>
 
-              <div className="profile-facts">
-                <div>
-                  <span>EDUCATION / 01</span>
-                  <strong>赫特福德大学</strong>
-                  <p>游戏美术设计 · 硕士</p>
-                  <small>2025—2027 · 专业前 10%</small>
-                </div>
-                <div>
-                  <span>EDUCATION / 02</span>
-                  <strong>河北美术学院</strong>
-                  <p>动画 · 本科</p>
-                  <small>2021—2025 · 专业前 10%</small>
-                </div>
-                <div>
-                  <span>CONTACT</span>
-                  <strong>yangying25of@163.com</strong>
-                  <p>136 8957 2668</p>
-                  <small>期待城市 · 深圳</small>
+                <div className="profile-facts">
+                  <div>
+                    <span>EDUCATION / 01</span>
+                    <strong>赫特福德大学</strong>
+                    <p>游戏美术设计 · 硕士</p>
+                    <small>2025—2027 · 专业前 10%</small>
+                  </div>
+                  <div>
+                    <span>EDUCATION / 02</span>
+                    <strong>河北美术学院</strong>
+                    <p>动画 · 本科</p>
+                    <small>2021—2025 · 专业前 10%</small>
+                  </div>
+                  <div>
+                    <span>CONTACT</span>
+                    <strong>yangying25of@163.com</strong>
+                    <p>136 8957 2668</p>
+                    <small>期待城市 · 深圳</small>
+                  </div>
                 </div>
               </div>
-            </div>
+            </BorderGlow>
           </div>
 
           <div className="stats-grid stats-grid--two">

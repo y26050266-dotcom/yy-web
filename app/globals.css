@@ -2098,6 +2098,45 @@ a {
   box-shadow: 0 0 0 3px #c3c7ca, 8px 9px 0 #050607, inset 0 3px 0 rgb(255 255 255 / 22%);
 }
 
+.profile-glow-card {
+  width: 100%;
+}
+
+.profile-glow-card--story {
+  height: 100%;
+}
+
+.profile-glow-card--portrait .border-glow-inner,
+.profile-glow-card--portrait .portrait-panel,
+.profile-glow-card--story .border-glow-inner,
+.profile-glow-card--story .profile-story {
+  height: 100%;
+}
+
+.profile-glow-card .portrait-panel,
+.profile-glow-card .skills-panel,
+.profile-glow-card .profile-story {
+  border: 0;
+  border-radius: inherit;
+  box-shadow: none;
+}
+
+.profile-glow-card .portrait-panel,
+.profile-glow-card .skills-panel {
+  background-color: transparent;
+}
+
+.profile-glow-card .profile-story {
+  background:
+    repeating-linear-gradient(180deg, rgb(255 255 255 / 7%) 0 2px, transparent 2px 5px),
+    linear-gradient(180deg, rgb(184 190 194 / 38%), rgb(85 91 97 / 18%));
+}
+
+.profile-glow-card:focus-within {
+  outline: 2px solid #56c6e8;
+  outline-offset: 4px;
+}
+
 .overline {
   color: #30464d;
   font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
