@@ -2794,6 +2794,7 @@ a {
   }
 
   .project-detail-page--prop .project-detail-gallery-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 22px;
   }
 
@@ -2807,6 +2808,7 @@ a {
   }
 
   .project-detail-page--prop .project-detail-closeups {
+    width: min(1080px, calc(100% - 72px));
     padding: 54px 0 84px;
   }
 
