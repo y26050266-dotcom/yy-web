@@ -22,13 +22,13 @@ const projects: ProjectItem[] = [
   },
   {
     index: '02',
-    title: 'THE LAST OBSERVATORY',
-    subtitle: '环境叙事 · 废墟材质 · 空间构图',
+    title: '道具设计',
+    subtitle: '造型设计 · PBR材质 · 细节叙事',
     image: '/project-observatory.png',
     alt: '被苔藓和浅水覆盖的粗野主义天文台概念场景',
     className: 'project-card',
-    label: 'CONCEPT PLACEHOLDER',
-    href: '/projects/last-observatory',
+    label: 'CATEGORY · PROP DESIGN',
+    href: null,
   },
   {
     index: '03',
