@@ -1,3 +1,5 @@
+import PixelBlast from './PixelBlast';
+
 type ProjectItem = {
   index: string;
   title: string;
@@ -173,6 +175,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PixelBlast
+        className="home-pixel-blast"
+        variant="circle"
+        pixelSize={6}
+        color="#56c6e8"
+        patternScale={3}
+        patternDensity={0.5}
+        pixelSizeJitter={0.5}
+        enableRipples
+        rippleSpeed={0.4}
+        rippleThickness={0.12}
+        rippleIntensityScale={1.15}
+        liquid
+        liquidStrength={0.08}
+        liquidRadius={1.1}
+        liquidWobbleSpeed={5}
+        speed={0.22}
+        edgeFade={0.22}
+        transparent
+      />
 
       <section className="profile-section section-pad" id="profile">
         <div className="shell">

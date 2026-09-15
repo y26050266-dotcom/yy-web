@@ -1904,11 +1904,12 @@ a {
 .projects-section,
 .strengths-section {
   position: relative;
+  z-index: 1;
   isolation: isolate;
   overflow: hidden;
   background:
     radial-gradient(ellipse at 50% 18%, rgb(255 255 255 / 4%) 0%, transparent 46%),
-    repeating-radial-gradient(ellipse at 50% 30%, #17191c 0 4px, #131518 5px 8px);
+    repeating-radial-gradient(ellipse at 50% 30%, rgb(23 25 28 / 86%) 0 4px, rgb(19 21 24 / 86%) 5px 8px);
   color: #f3f2ee;
 }
 
@@ -2344,10 +2345,17 @@ a {
 }
 
 .contact-section {
+  position: relative;
+  z-index: 1;
   min-height: 100svh;
   background:
     radial-gradient(ellipse at 50% 42%, rgb(255 255 255 / 5%), transparent 52%),
-    repeating-radial-gradient(ellipse at 50% 40%, #191b1e 0 4px, #131518 5px 8px);
+    repeating-radial-gradient(ellipse at 50% 40%, rgb(25 27 30 / 88%) 0 4px, rgb(19 21 24 / 88%) 5px 8px);
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-image { opacity: 0.12; filter: grayscale(1) contrast(1.3); }
