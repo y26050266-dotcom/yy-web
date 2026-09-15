@@ -1,5 +1,6 @@
 import PixelBlast from './PixelBlast';
 import BorderGlow from './BorderGlow';
+import FloatingNavigation from './FloatingNavigation';
 
 type ProjectItem = {
   index: string;
@@ -176,6 +177,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FloatingNavigation />
 
       <PixelBlast
         className="home-pixel-blast"
