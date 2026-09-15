@@ -1,6 +1,7 @@
 import PixelBlast from './PixelBlast';
 import BorderGlow from './BorderGlow';
 import FloatingNavigation from './FloatingNavigation';
+import MotionDirector from './MotionDirector';
 
 type ProjectItem = {
   index: string;
@@ -83,6 +84,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
+      <MotionDirector />
       <section className="hero" id="top">
         <div className="hero-stage">
           <div className="hero-star-rail hero-star-rail--top" aria-hidden="true">
@@ -209,6 +211,11 @@ export default function Home() {
               <span>PROFILE / 个人经历</span>
             </div>
             <p>基于简历信息整理 · 2026</p>
+          </div>
+
+          <div className="motion-section-title" aria-hidden="true">
+            <span className="motion-section-title__word">PROFILE</span>
+            <span className="motion-section-title__index">01 — IDENTITY</span>
           </div>
 
           <div className="profile-grid">
@@ -345,6 +352,11 @@ export default function Home() {
             <p>VISUAL CONCEPT PLACEHOLDERS</p>
           </div>
 
+          <div className="motion-section-title" aria-hidden="true">
+            <span className="motion-section-title__word">PROJECTS</span>
+            <span className="motion-section-title__index">02 — SELECTED WORKS</span>
+          </div>
+
           <div className="projects-intro">
             <h2>精选作品</h2>
           </div>
@@ -366,6 +378,11 @@ export default function Home() {
               <span>CONTACT / 联系方式</span>
             </div>
             <p>AVAILABLE FOR OPPORTUNITIES</p>
+          </div>
+
+          <div className="motion-section-title" aria-hidden="true">
+            <span className="motion-section-title__word">CONTACT</span>
+            <span className="motion-section-title__index">03 — START A PROJECT</span>
           </div>
 
           <div className="contact-main">
