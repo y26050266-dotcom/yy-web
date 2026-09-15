@@ -2736,6 +2736,18 @@ a {
   aspect-ratio: 16 / 9;
 }
 
+.project-detail-shot--controller img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #050607;
+}
+
+.project-detail-shot--controller.project-detail-shot--featured img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 62%;
+}
+
 .project-detail-prop-rail {
   grid-column: 1 / -1;
 }
@@ -2866,6 +2878,11 @@ a {
     padding: 6px 5px 18px;
     scrollbar-color: #747c82 #0b0d0f;
     scrollbar-width: thin;
+  }
+
+  .project-detail-page--controller .project-detail-controller-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
   }
 }
 
@@ -3536,6 +3553,10 @@ a {
 
   .project-detail-closeup-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-detail-page--controller .project-detail-controller-grid {
+    grid-template-columns: 1fr;
   }
 
   .mist-neon-shot--color,

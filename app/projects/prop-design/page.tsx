@@ -74,6 +74,26 @@ export default function PropDesignProjects() {
           </div>
         </a>
 
+        <a className="project-category-card project-category-card--controller" href="/projects/prop-design/project-02">
+          <div className="project-category-card-media">
+            <img
+              src="/projects/prop-design/drone-controller/cover.png"
+              alt="带显示屏、实体控制模块与信号天线的无人机控制器"
+            />
+            <span>PROP DESIGN / 02</span>
+          </div>
+          <div className="project-category-card-copy">
+            <span className="project-category-card-index">PROJECT / 02</span>
+            <h2>无人机控制器</h2>
+            <p className="project-category-card-tags">硬表面建模 · 交互界面 · 材质表现</p>
+            <p>
+              以便携式遥控终端为原型，整合显示屏、实体控制模块与信号天线，
+              形成兼具功能逻辑与未来工业感的无人机控制装置。
+            </p>
+            <span className="project-category-card-cta">查看独立详情页 ↗</span>
+          </div>
+        </a>
+
         <p className="project-category-note">
           当前收录的每项道具设计作品均可进入各自的独立详情页。
         </p>
