@@ -28,7 +28,7 @@ const projects: ProjectItem[] = [
     alt: '被苔藓和浅水覆盖的粗野主义天文台概念场景',
     className: 'project-card',
     label: 'CATEGORY · PROP DESIGN',
-    href: null,
+    href: '/projects/prop-design',
   },
   {
     index: '03',

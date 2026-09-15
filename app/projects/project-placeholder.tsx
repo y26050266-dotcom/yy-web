@@ -4,6 +4,10 @@ type ProjectPlaceholderProps = {
   subtitle: string;
   image: string;
   alt: string;
+  backHref?: string;
+  backLabel?: string;
+  sectionLabel?: string;
+  overline?: string;
 };
 
 export function ProjectPlaceholder({
@@ -12,14 +16,18 @@ export function ProjectPlaceholder({
   subtitle,
   image,
   alt,
+  backHref = '/#projects',
+  backLabel = '返回精选作品',
+  sectionLabel = 'INDEPENDENT PAGE',
+  overline = 'PROJECT DETAIL · CONTENT SLOT',
 }: ProjectPlaceholderProps) {
   return (
     <main className="project-detail-page project-detail-page--placeholder">
       <header className="project-detail-nav shell">
-        <a href="/#projects">← 返回精选作品</a>
+        <a href={backHref}>← {backLabel}</a>
         <div>
           <span>PROJECT / {index}</span>
-          <small>INDEPENDENT PAGE</small>
+          <small>{sectionLabel}</small>
         </div>
         <a href="mailto:yangying25of@163.com">CONTACT ↗</a>
       </header>
@@ -27,7 +35,7 @@ export function ProjectPlaceholder({
       <section className="project-detail-hero shell">
         <div className="project-detail-header">
           <div className="project-detail-title project-detail-title--placeholder">
-            <p>PROJECT DETAIL · CONTENT SLOT</p>
+            <p>{overline}</p>
             <h1>{title}</h1>
             <div className="project-detail-tags">
               <span><b>{index}</b>{subtitle}</span>
@@ -66,7 +74,7 @@ export function ProjectPlaceholder({
 
       <footer className="project-detail-footer shell">
         <span>YANG YING · PORTFOLIO 2026</span>
-        <a href="/#projects">返回作品列表 ↑</a>
+        <a href={backHref}>返回作品列表 ↑</a>
       </footer>
     </main>
   );
