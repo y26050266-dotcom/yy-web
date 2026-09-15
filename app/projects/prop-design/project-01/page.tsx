@@ -21,34 +21,47 @@ export const metadata: Metadata = {
 
 const gallery = [
   {
-    src: '/projects/prop-design/spherical-scout-drone/perspective.png',
-    alt: '球形侦察无人机三分之四视角渲染',
-    label: '三分之四视图 / 01',
-    featured: true,
-  },
-  {
     src: '/projects/prop-design/spherical-scout-drone/front.png',
     alt: '球形侦察无人机正面结构渲染',
     label: '正面结构 / 02',
-    featured: false,
   },
   {
     src: '/projects/prop-design/spherical-scout-drone/top.png',
     alt: '球形侦察无人机底部结构渲染',
     label: '底部结构 / 03',
-    featured: false,
   },
   {
     src: '/projects/prop-design/spherical-scout-drone/cover.png',
     alt: '灰黑装甲与蓝色发光组件构成的球形侦察无人机主视觉',
     label: '机体主视图 / 04',
-    featured: false,
   },
   {
     src: '/projects/prop-design/spherical-scout-drone/rear.png',
     alt: '球形侦察无人机顶部发光结构渲染',
     label: '顶部结构 / 05',
-    featured: false,
+  },
+];
+
+const detailGallery = [
+  {
+    src: '/projects/prop-design/spherical-scout-drone/detail-sensor.png',
+    alt: '球形侦察无人机侧面蓝色感应器细节',
+    label: '侧面感应器 / 01',
+  },
+  {
+    src: '/projects/prop-design/spherical-scout-drone/detail-thruster.png',
+    alt: '球形侦察无人机底部推进组件细节',
+    label: '底部推进组件 / 02',
+  },
+  {
+    src: '/projects/prop-design/spherical-scout-drone/detail-body.png',
+    alt: '球形侦察无人机机身标识与金属材质细节',
+    label: '机身标识与材质 / 03',
+  },
+  {
+    src: '/projects/prop-design/spherical-scout-drone/detail-light-vents.png',
+    alt: '球形侦察无人机侧舷照明与散热结构细节',
+    label: '侧舷照明结构 / 04',
   },
 ];
 
@@ -88,12 +101,37 @@ export default function SphericalScoutDroneProject() {
         </div>
 
         <div className="project-detail-gallery-grid">
+          <figure className="project-detail-shot project-detail-shot--prop project-detail-shot--featured">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster="/projects/prop-design/spherical-scout-drone/perspective.png"
+              aria-label="球形侦察无人机 360 度旋转展示"
+            >
+              <source src="/projects/prop-design/spherical-scout-drone/turntable.mp4" type="video/mp4" />
+            </video>
+            <figcaption>360° 旋转展示 / 01</figcaption>
+          </figure>
+
           {gallery.map((item) => (
             <figure
-              className={`project-detail-shot project-detail-shot--prop${item.featured ? ' project-detail-shot--featured' : ''}`}
+              className="project-detail-shot project-detail-shot--prop"
               key={item.src}
             >
-              <img src={item.src} alt={item.alt} loading={item.featured ? 'eager' : 'lazy'} />
+              <img src={item.src} alt={item.alt} loading="lazy" />
+              <figcaption>{item.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="project-detail-closeups shell" aria-labelledby="prop-detail-title">
+        <h3 id="prop-detail-title">细节特写</h3>
+        <div className="project-detail-closeup-grid">
+          {detailGallery.map((item) => (
+            <figure className="project-detail-shot project-detail-shot--closeup" key={item.src}>
+              <img src={item.src} alt={item.alt} loading="lazy" />
               <figcaption>{item.label}</figcaption>
             </figure>
           ))}

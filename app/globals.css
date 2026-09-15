@@ -2736,6 +2736,32 @@ a {
   aspect-ratio: 16 / 9;
 }
 
+.project-detail-closeups {
+  padding: clamp(72px, 8vw, 120px) 0;
+}
+
+.project-detail-closeups h3 {
+  margin: 0 0 28px;
+  color: #d4ddd8;
+  font-family: 'Pixelify Local', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 720;
+  letter-spacing: 0.04em;
+  text-shadow: 2px 3px 0 #26363b, 4px 5px 0 #050607;
+}
+
+.project-detail-closeup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-detail-shot--closeup img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #050607;
+}
+
 .project-detail-shot:hover img {
   scale: 1.025;
   filter: saturate(1) contrast(1.05);
@@ -3394,6 +3420,10 @@ a {
   .project-detail-gallery-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .project-detail-closeup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .mist-neon-shot--color,
