@@ -37,6 +37,29 @@ const gallery = [
   },
 ];
 
+const detailGallery = [
+  {
+    src: '/projects/prop-design/drone-controller/detail-screen.png',
+    alt: '无人机控制器屏幕界面细节',
+    label: '屏幕界面 / 01',
+  },
+  {
+    src: '/projects/prop-design/drone-controller/detail-controls.png',
+    alt: '无人机控制器控制模块细节',
+    label: '控制模块 / 02',
+  },
+  {
+    src: '/projects/prop-design/drone-controller/detail-power.png',
+    alt: '无人机控制器电源按键细节',
+    label: '电源按键 / 03',
+  },
+  {
+    src: '/projects/prop-design/drone-controller/detail-joystick.png',
+    alt: '无人机控制器操控摇杆与散热口细节',
+    label: '摇杆与散热口 / 04',
+  },
+];
+
 const responsibilities = ['造型设计', '硬表面建模', '材质表现', '屏幕界面', '灯光', '渲染'];
 
 export default function DroneControllerProject() {
@@ -83,6 +106,18 @@ export default function DroneControllerProject() {
 
           {gallery.map((item) => (
             <figure className="project-detail-shot project-detail-shot--controller" key={item.src}>
+              <img src={item.src} alt={item.alt} loading="lazy" />
+              <figcaption>{item.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="project-detail-closeups shell" aria-labelledby="controller-detail-title">
+        <h3 id="controller-detail-title">细节特写</h3>
+        <div className="project-detail-closeup-grid">
+          {detailGallery.map((item) => (
+            <figure className="project-detail-shot project-detail-shot--closeup" key={item.src}>
               <img src={item.src} alt={item.alt} loading="lazy" />
               <figcaption>{item.label}</figcaption>
             </figure>

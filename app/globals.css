@@ -2744,8 +2744,18 @@ a {
 
 .project-detail-shot--controller.project-detail-shot--featured img {
   aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+  background: radial-gradient(circle at 50% 48%, #858585 0%, #5c5c5c 58%, #262626 100%);
+}
+
+.project-detail-page--controller .project-detail-controller-grid > .project-detail-shot:nth-child(4) img {
   object-fit: cover;
-  object-position: center 62%;
+  object-position: center;
+}
+
+.project-detail-page--controller .project-detail-shot--featured:hover img {
+  scale: 1;
 }
 
 .project-detail-prop-rail {
@@ -3077,6 +3087,46 @@ a {
   line-height: 1.02;
   letter-spacing: -0.015em;
   text-shadow: 2px 3px 0 #27363b, 4px 5px 0 #050607;
+}
+
+@media (min-width: 901px) {
+  .project-category-card--controller {
+    height: 560px;
+  }
+
+  .project-category-card--controller .project-category-card-media {
+    min-height: 0;
+    height: 100%;
+  }
+
+  .project-category-card--controller .project-category-card-media img {
+    object-fit: contain;
+    object-position: center;
+    background: radial-gradient(circle at 50% 48%, #858585 0%, #5c5c5c 58%, #262626 100%);
+  }
+
+  .project-category-card--controller:hover .project-category-card-media img {
+    scale: 1;
+  }
+
+  .project-category-card--controller .project-category-card-copy {
+    padding: 34px 32px;
+  }
+
+  .project-category-card--controller h2 {
+    margin-top: 18px;
+    font-size: clamp(38px, 3vw, 50px);
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+  }
+
+  .project-category-card--controller .project-category-card-tags {
+    margin-bottom: 22px;
+  }
+
+  .project-category-card--controller .project-category-card-cta {
+    margin-top: 28px;
+  }
 }
 
 .project-category-card-copy .project-category-card-tags {
@@ -3498,6 +3548,23 @@ a {
 
   .project-category-card h2 {
     font-size: clamp(42px, 14vw, 68px);
+  }
+
+  .project-category-card--controller .project-category-card-media {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-category-card--controller .project-category-card-media img {
+    object-fit: contain;
+    object-position: center;
+    background: radial-gradient(circle at 50% 48%, #858585 0%, #5c5c5c 58%, #262626 100%);
+  }
+
+  .project-category-card--controller h2 {
+    font-size: clamp(34px, 10.5vw, 54px);
+    letter-spacing: -0.05em;
+    white-space: nowrap;
   }
 
   .project-category-note {
