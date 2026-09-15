@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 
 const gallery = [
   {
-    src: '/projects/prop-design/spherical-scout-drone/cover.png',
-    alt: '灰黑装甲与蓝色发光组件构成的球形侦察无人机主视觉',
-    label: '机体主视图 / 01',
+    src: '/projects/prop-design/spherical-scout-drone/perspective.png',
+    alt: '球形侦察无人机三分之四视角渲染',
+    label: '三分之四视图 / 01',
     featured: true,
   },
   {
@@ -34,20 +34,20 @@ const gallery = [
   },
   {
     src: '/projects/prop-design/spherical-scout-drone/top.png',
-    alt: '球形侦察无人机顶部结构渲染',
-    label: '顶部结构 / 03',
+    alt: '球形侦察无人机底部结构渲染',
+    label: '底部结构 / 03',
     featured: false,
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/perspective.png',
-    alt: '球形侦察无人机三分之四视角渲染',
-    label: '三分之四视图 / 04',
+    src: '/projects/prop-design/spherical-scout-drone/cover.png',
+    alt: '灰黑装甲与蓝色发光组件构成的球形侦察无人机主视觉',
+    label: '机体主视图 / 04',
     featured: false,
   },
   {
     src: '/projects/prop-design/spherical-scout-drone/rear.png',
-    alt: '球形侦察无人机背部发光结构渲染',
-    label: '背部结构 / 05',
+    alt: '球形侦察无人机顶部发光结构渲染',
+    label: '顶部结构 / 05',
     featured: false,
   },
 ];
