@@ -2726,6 +2726,16 @@ a {
   background: #050607;
 }
 
+.project-detail-shot--prop img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #050607;
+}
+
+.project-detail-shot--prop.project-detail-shot--featured img {
+  aspect-ratio: 16 / 9;
+}
+
 .project-detail-shot:hover img {
   scale: 1.025;
   filter: saturate(1) contrast(1.05);

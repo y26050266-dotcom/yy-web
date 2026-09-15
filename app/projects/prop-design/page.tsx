@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: '道具设计 | 杨颖作品集',
     description,
-    images: ['/project-observatory.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '道具设计 | 杨颖作品集',
     description,
-    images: ['/project-observatory.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
   },
 };
 
@@ -57,25 +57,25 @@ export default function PropDesignProjects() {
         <a className="project-category-card" href="/projects/prop-design/project-01">
           <div className="project-category-card-media">
             <img
-              src="/project-observatory.png"
-              alt="道具设计专栏的临时封面图"
+              src="/projects/prop-design/spherical-scout-drone/cover.png"
+              alt="灰黑装甲与蓝色发光组件构成的球形侦察无人机"
             />
             <span>PROP DESIGN / 01</span>
           </div>
           <div className="project-category-card-copy">
             <span className="project-category-card-index">PROJECT / 01</span>
-            <h2>道具设计项目 01</h2>
-            <p className="project-category-card-tags">造型设计 · PBR材质 · 细节叙事</p>
+            <h2>球形侦察无人机</h2>
+            <p className="project-category-card-tags">硬表面建模 · 材质表现 · 结构细节</p>
             <p>
-              已建立可独立浏览的道具项目页面。项目名称、真实封面、制作过程与成品图
-              将在作品素材确定后替换，不与其他项目混用。
+              以紧凑球形轮廓为核心，通过模块化装甲、分区面板与蓝色发光组件，
+              塑造兼具工业质感和未来科技感的侦察装置。
             </p>
             <span className="project-category-card-cta">查看独立详情页 ↗</span>
           </div>
         </a>
 
         <p className="project-category-note">
-          道具作品素材补充后，可继续增加项目卡片与对应的独立详情页。
+          当前收录的每项道具设计作品均可进入各自的独立详情页。
         </p>
       </section>
 
