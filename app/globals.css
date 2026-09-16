@@ -2873,11 +2873,13 @@ a {
 }
 
 .project-detail-gallery--cloud-heaven,
-.project-detail-gallery--shan-hai-beasts {
+.project-detail-gallery--shan-hai-beasts,
+.project-detail-gallery--dual-eras {
   width: min(1880px, calc(100% - 48px));
 }
 
-.project-detail-gallery-grid--cloud-heaven {
+.project-detail-gallery-grid--cloud-heaven,
+.project-detail-gallery-grid--dual-eras {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(16px, 1.8vw, 28px);
 }
