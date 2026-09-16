@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: '道具设计 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '道具设计 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.webp'],
   },
 };
 
@@ -57,7 +57,7 @@ export default function PropDesignProjects() {
         <a className="project-category-card" href="/projects/prop-design/project-01">
           <div className="project-category-card-media">
             <img
-              src="/projects/prop-design/spherical-scout-drone/cover.png"
+              src="/projects/prop-design/spherical-scout-drone/cover.webp"
               alt="灰黑装甲与蓝色发光组件构成的球形侦察无人机"
             />
             <span>PROP DESIGN / 01</span>
@@ -77,7 +77,7 @@ export default function PropDesignProjects() {
         <a className="project-category-card project-category-card--controller" href="/projects/prop-design/project-02">
           <div className="project-category-card-media">
             <img
-              src="/projects/prop-design/drone-controller/cover.png"
+              src="/projects/prop-design/drone-controller/cover.webp"
               alt="带显示屏、实体控制模块与信号天线的无人机控制器"
             />
             <span>PROP DESIGN / 02</span>

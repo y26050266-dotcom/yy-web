@@ -88,10 +88,9 @@ export default function BorderGlow({
     const card = cardRef.current;
     if (!animated || !card || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
 
-    const startedAt = performance.now();
     const duration = 3000;
     let frame = 0;
-    card.classList.add('sweep-active');
+    let startedAt = 0;
 
     const tick = (now) => {
       const progress = Math.min((now - startedAt) / duration, 1);
@@ -110,8 +109,16 @@ export default function BorderGlow({
       }
     };
 
-    frame = requestAnimationFrame(tick);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      observer.disconnect();
+      startedAt = performance.now();
+      card.classList.add('sweep-active');
+      frame = requestAnimationFrame(tick);
+    }, { rootMargin: '100px 0px' });
+    observer.observe(card);
     return () => {
+      observer.disconnect();
       cancelAnimationFrame(frame);
       card.classList.remove('sweep-active');
     };

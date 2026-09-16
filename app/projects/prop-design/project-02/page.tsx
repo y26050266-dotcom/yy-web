@@ -9,29 +9,29 @@ export const metadata: Metadata = {
   openGraph: {
     title: '无人机控制器 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/drone-controller/cover.png'],
+    images: ['/projects/prop-design/drone-controller/cover.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '无人机控制器 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/drone-controller/cover.png'],
+    images: ['/projects/prop-design/drone-controller/cover.webp'],
   },
 };
 
 const gallery = [
   {
-    src: '/projects/prop-design/drone-controller/front-three-quarter.jpg',
+    src: '/projects/prop-design/drone-controller/front-three-quarter.webp',
     alt: '无人机控制器正面三分之四视图',
     label: '正面三分之四视图 / 02',
   },
   {
-    src: '/projects/prop-design/drone-controller/front-view.jpg',
+    src: '/projects/prop-design/drone-controller/front-view.webp',
     alt: '无人机控制器正面视图',
     label: '正面视图 / 03',
   },
   {
-    src: '/projects/prop-design/drone-controller/side-three-quarter.png',
+    src: '/projects/prop-design/drone-controller/side-three-quarter.webp',
     alt: '无人机控制器侧面三分之四视图',
     label: '侧面三分之四视图 / 04',
   },
@@ -39,22 +39,22 @@ const gallery = [
 
 const detailGallery = [
   {
-    src: '/projects/prop-design/drone-controller/detail-screen.png',
+    src: '/projects/prop-design/drone-controller/detail-screen.webp',
     alt: '无人机控制器屏幕界面细节',
     label: '屏幕界面 / 01',
   },
   {
-    src: '/projects/prop-design/drone-controller/detail-controls.png',
+    src: '/projects/prop-design/drone-controller/detail-controls.webp',
     alt: '无人机控制器控制模块细节',
     label: '控制模块 / 02',
   },
   {
-    src: '/projects/prop-design/drone-controller/detail-power.png',
+    src: '/projects/prop-design/drone-controller/detail-power.webp',
     alt: '无人机控制器电源按键细节',
     label: '电源按键 / 03',
   },
   {
-    src: '/projects/prop-design/drone-controller/detail-joystick.png',
+    src: '/projects/prop-design/drone-controller/detail-joystick.webp',
     alt: '无人机控制器操控摇杆与麦克风细节',
     label: '摇杆与麦克风 / 04',
   },
@@ -107,7 +107,7 @@ export default function DroneControllerProject() {
         <div className="project-detail-gallery-grid project-detail-controller-grid">
           <figure className="project-detail-shot project-detail-shot--controller project-detail-shot--featured">
             <img
-              src="/projects/prop-design/drone-controller/cover.png"
+              src="/projects/prop-design/drone-controller/cover.webp"
               alt="无人机控制器主视觉"
             />
             <figcaption>机体主视图 / 01</figcaption>

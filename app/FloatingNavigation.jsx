@@ -9,24 +9,12 @@ export default function FloatingNavigation() {
     const hero = document.getElementById('top');
     if (!hero) return undefined;
 
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      setVisible(hero.getBoundingClientRect().bottom <= 80);
-    };
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-      if (frame) cancelAnimationFrame(frame);
-    };
+    setVisible(hero.getBoundingClientRect().bottom <= 80);
+    const observer = new IntersectionObserver(([entry]) => {
+      setVisible(!entry.isIntersecting);
+    }, { rootMargin: '-80px 0px 0px 0px' });
+    observer.observe(hero);
+    return () => observer.disconnect();
   }, []);
 
   const linkTabIndex = visible ? 0 : -1;

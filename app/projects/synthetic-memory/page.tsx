@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.webp'],
   },
 };
 
@@ -51,7 +51,7 @@ export default function SyntheticMemoryProject() {
         </div>
 
         <figure className="project-detail-hero-frame">
-          <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
+          <img src="/projects/ai-visual-creation/epic-fantasy/cover.webp" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
           <figcaption>
             <span>史诗幻想 / 封面画面</span>
             <span>01 — 03</span>
@@ -62,11 +62,11 @@ export default function SyntheticMemoryProject() {
       <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-label="史诗幻想作品画面">
         <div className="project-detail-gallery-grid">
           <figure className="project-detail-shot">
-            <img src="/projects/ai-visual-creation/epic-fantasy/icefront.png" alt="巨龙飞越冰雪荒原与行军队伍" loading="lazy" />
+            <img src="/projects/ai-visual-creation/epic-fantasy/icefront.webp" alt="巨龙飞越冰雪荒原与行军队伍" loading="lazy" />
             <figcaption>冰雪荒原 / 02</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src="/projects/ai-visual-creation/epic-fantasy/rider.png" alt="巨龙向战场喷吐火焰" loading="lazy" />
+            <img src="/projects/ai-visual-creation/epic-fantasy/rider.webp" alt="巨龙向战场喷吐火焰" loading="lazy" />
             <figcaption>烈焰战场 / 03</figcaption>
           </figure>
         </div>

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: '3D环境设计 | 杨颖作品集',
     description,
-    images: ['/projects/jungle-temple/hero.png'],
+    images: ['/projects/jungle-temple/hero.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '3D环境设计 | 杨颖作品集',
     description,
-    images: ['/projects/jungle-temple/hero.png'],
+    images: ['/projects/jungle-temple/hero.webp'],
   },
 };
 
@@ -57,7 +57,7 @@ export default function EnvironmentProjects() {
         <a className="project-category-card" href="/projects/jungle-temple">
           <div className="project-category-card-media">
             <img
-              src="/projects/jungle-temple/hero.png"
+              src="/projects/jungle-temple/hero.webp"
               alt="竹林深处被自然侵蚀的中式古寺三维环境场景"
             />
             <span>3D ENVIRONMENT / 01</span>
@@ -77,7 +77,7 @@ export default function EnvironmentProjects() {
         <a className="project-category-card" href="/projects/mist-neon-city">
           <div className="project-category-card-media">
             <img
-              src="/projects/mist-neon-city/colorful-01.jpg"
+              src="/projects/mist-neon-city/colorful-01.webp"
               alt="云雾与霓虹包围的未来城市三维环境场景"
             />
             <span>3D ENVIRONMENT / 02</span>
@@ -97,7 +97,7 @@ export default function EnvironmentProjects() {
         <a className="project-category-card" href="/projects/deep-sea-asphyxia">
           <div className="project-category-card-media">
             <img
-              src="/projects/deep-sea-asphyxia/scene-01.png"
+              src="/projects/deep-sea-asphyxia/scene-01.webp"
               alt="幽暗深海中游弋生物与废弃机械构成的三维环境场景"
             />
             <span>3D ENVIRONMENT / 03</span>

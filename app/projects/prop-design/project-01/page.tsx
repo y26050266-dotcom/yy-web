@@ -9,34 +9,34 @@ export const metadata: Metadata = {
   openGraph: {
     title: '球形侦察无人机 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '球形侦察无人机 | 杨颖作品集',
     description,
-    images: ['/projects/prop-design/spherical-scout-drone/cover.png'],
+    images: ['/projects/prop-design/spherical-scout-drone/cover.webp'],
   },
 };
 
 const gallery = [
   {
-    src: '/projects/prop-design/spherical-scout-drone/front.png',
+    src: '/projects/prop-design/spherical-scout-drone/front.webp',
     alt: '球形侦察无人机正面结构渲染',
     label: '正面结构 / 02',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/top.png',
+    src: '/projects/prop-design/spherical-scout-drone/top.webp',
     alt: '球形侦察无人机底部结构渲染',
     label: '底部结构 / 03',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/cover.png',
+    src: '/projects/prop-design/spherical-scout-drone/cover.webp',
     alt: '灰黑装甲与蓝色发光组件构成的球形侦察无人机主视觉',
     label: '机体主视图 / 04',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/rear.png',
+    src: '/projects/prop-design/spherical-scout-drone/rear.webp',
     alt: '球形侦察无人机顶部发光结构渲染',
     label: '顶部结构 / 05',
   },
@@ -44,22 +44,22 @@ const gallery = [
 
 const detailGallery = [
   {
-    src: '/projects/prop-design/spherical-scout-drone/detail-sensor.png',
+    src: '/projects/prop-design/spherical-scout-drone/detail-sensor.webp',
     alt: '球形侦察无人机侧面蓝色感应器细节',
     label: '侧面感应器 / 01',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/detail-thruster.png',
+    src: '/projects/prop-design/spherical-scout-drone/detail-thruster.webp',
     alt: '球形侦察无人机底部推进组件细节',
     label: '底部推进组件 / 02',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/detail-body.png',
+    src: '/projects/prop-design/spherical-scout-drone/detail-body.webp',
     alt: '球形侦察无人机机身标识与金属材质细节',
     label: '机身标识与材质 / 03',
   },
   {
-    src: '/projects/prop-design/spherical-scout-drone/detail-light-vents.png',
+    src: '/projects/prop-design/spherical-scout-drone/detail-light-vents.webp',
     alt: '球形侦察无人机侧舷照明与散热结构细节',
     label: '侧舷照明结构 / 04',
   },
@@ -114,8 +114,8 @@ export default function SphericalScoutDroneProject() {
             <video
               controls
               playsInline
-              preload="metadata"
-              poster="/projects/prop-design/spherical-scout-drone/perspective.png"
+              preload="none"
+              poster="/projects/prop-design/spherical-scout-drone/perspective.webp"
               aria-label="球形侦察无人机 360 度旋转展示"
             >
               <source src="/projects/prop-design/spherical-scout-drone/turntable.mp4" type="video/mp4" />

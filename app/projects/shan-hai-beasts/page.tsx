@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
 };
 
@@ -55,19 +55,19 @@ export default function ShanHaiBeastsProject() {
       <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--shan-hai-beasts shell" aria-label="异兽山海作品画面">
         <div className="project-detail-gallery-grid project-detail-gallery-grid--shan-hai-beasts">
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/cover.png`} alt="毕方振翅掠过山岳云海，旅人立于下方" />
+            <img src={`${imageRoot}/cover.webp`} alt="毕方振翅掠过山岳云海，旅人立于下方" />
             <figcaption><span>毕方</span><span>01 / 04</span></figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/qiongqi.png`} alt="穷奇立于山崖，旅人在山脚仰望" loading="lazy" />
+            <img src={`${imageRoot}/qiongqi.webp`} alt="穷奇立于山崖，旅人在山脚仰望" loading="lazy" />
             <figcaption><span>穷奇</span><span>02 / 04</span></figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/nine-tailed-fox.png`} alt="九尾狐出现在云雾缭绕的山谷" loading="lazy" />
+            <img src={`${imageRoot}/nine-tailed-fox.webp`} alt="九尾狐出现在云雾缭绕的山谷" loading="lazy" />
             <figcaption><span>九尾狐</span><span>03 / 04</span></figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/taotie.png`} alt="饕餮逼近荒原上的旅人" loading="lazy" />
+            <img src={`${imageRoot}/taotie.webp`} alt="饕餮逼近荒原上的旅人" loading="lazy" />
             <figcaption><span>饕餮</span><span>04 / 04</span></figcaption>
           </figure>
         </div>

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI视觉创作 | 杨颖作品集',
     description,
-    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI视觉创作 | 杨颖作品集',
     description,
-    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.webp'],
   },
 };
 
@@ -53,7 +53,7 @@ export default function AiVisualCreationProjects() {
         <div className="project-category-cards">
           <a className="project-category-card" href="/projects/synthetic-memory">
             <div className="project-category-card-media">
-              <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
+              <img src="/projects/ai-visual-creation/epic-fantasy/cover.webp" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
               <span>AI VISUAL EXPLORATIONS / 01</span>
             </div>
             <div className="project-category-card-copy">
@@ -67,7 +67,7 @@ export default function AiVisualCreationProjects() {
 
           <a className="project-category-card" href="/projects/cloud-heaven">
             <div className="project-category-card-media">
-              <img src="/projects/ai-visual-creation/cloud-heaven/cover.png" alt="云海与群山之间的白色石雕天门" loading="lazy" />
+              <img src="/projects/ai-visual-creation/cloud-heaven/cover.webp" alt="云海与群山之间的白色石雕天门" loading="lazy" />
               <span>AI VISUAL EXPLORATIONS / 02</span>
             </div>
             <div className="project-category-card-copy">
@@ -81,7 +81,7 @@ export default function AiVisualCreationProjects() {
 
           <a className="project-category-card" href="/projects/silk-road-echo">
             <div className="project-category-card-media">
-              <img src="/projects/ai-visual-creation/silk-road-echo/cover.png" alt="旅人与骆驼走向暖光中的石窟大佛" loading="lazy" />
+              <img src="/projects/ai-visual-creation/silk-road-echo/cover.webp" alt="旅人与骆驼走向暖光中的石窟大佛" loading="lazy" />
               <span>AI VISUAL EXPLORATIONS / 03</span>
             </div>
             <div className="project-category-card-copy">
@@ -95,7 +95,7 @@ export default function AiVisualCreationProjects() {
 
           <a className="project-category-card" href="/projects/shan-hai-beasts">
             <div className="project-category-card-media">
-              <img src="/projects/ai-visual-creation/shan-hai-beasts/cover.png" alt="毕方振翅掠过山岳云海" loading="lazy" />
+              <img src="/projects/ai-visual-creation/shan-hai-beasts/cover.webp" alt="毕方振翅掠过山岳云海" loading="lazy" />
               <span>AI VISUAL EXPLORATIONS / 04</span>
             </div>
             <div className="project-category-card-copy">
@@ -109,7 +109,7 @@ export default function AiVisualCreationProjects() {
 
           <a className="project-category-card" href="/projects/dual-eras">
             <div className="project-category-card-media">
-              <img src="/projects/ai-visual-creation/dual-eras/cover.png" alt="复古西方女性坐在梳妆镜前佩戴耳饰" loading="lazy" />
+              <img src="/projects/ai-visual-creation/dual-eras/cover.webp" alt="复古西方女性坐在梳妆镜前佩戴耳饰" loading="lazy" />
               <span>AI VISUAL EXPLORATIONS / 05</span>
             </div>
             <div className="project-category-card-copy">

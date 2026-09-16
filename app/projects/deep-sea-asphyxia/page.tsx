@@ -9,44 +9,44 @@ export const metadata: Metadata = {
   openGraph: {
     title: '深海·窒息 | 杨颖作品集',
     description,
-    images: ['/projects/deep-sea-asphyxia/scene-01.png'],
+    images: ['/projects/deep-sea-asphyxia/scene-01.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '深海·窒息 | 杨颖作品集',
     description,
-    images: ['/projects/deep-sea-asphyxia/scene-01.png'],
+    images: ['/projects/deep-sea-asphyxia/scene-01.webp'],
   },
 };
 
 const gallery = [
   {
     src: '/projects/deep-sea-asphyxia/deep-sea-film.mp4',
-    poster: '/projects/deep-sea-asphyxia/scene-01.png',
+    poster: '/projects/deep-sea-asphyxia/scene-01.webp',
     alt: '深海·窒息三维环境项目展示视频',
     label: '项目影像 / 01',
     featured: true,
   },
   {
-    src: '/projects/deep-sea-asphyxia/scene-01.png',
+    src: '/projects/deep-sea-asphyxia/scene-01.webp',
     alt: '幽暗海底中游弋生物与废弃机械构成的深海场景',
     label: '深海环境 / 02',
     featured: false,
   },
   {
-    src: '/projects/deep-sea-asphyxia/scene-02.png',
+    src: '/projects/deep-sea-asphyxia/scene-02.webp',
     alt: '被海底岩壁包围的废弃机械残骸',
     label: '机械残骸 / 03',
     featured: false,
   },
   {
-    src: '/projects/deep-sea-asphyxia/scene-03.png',
+    src: '/projects/deep-sea-asphyxia/scene-03.webp',
     alt: '深海灯具与鱼群形成的局部生物细节',
     label: '生物细节 / 04',
     featured: false,
   },
   {
-    src: '/projects/deep-sea-asphyxia/scene-04.png',
+    src: '/projects/deep-sea-asphyxia/scene-04.webp',
     alt: '冷色光线笼罩下的幽暗海底空间',
     label: '幽暗空间 / 05',
     featured: false,
@@ -106,13 +106,10 @@ export default function DeepSeaAsphyxiaProject() {
               {'poster' in item ? (
                 <video
                   aria-label={item.alt}
-                  autoPlay
                   controls
-                  loop
-                  muted
                   playsInline
                   poster={item.poster}
-                  preload="metadata"
+                  preload="none"
                 >
                   <source src={item.src} type="video/mp4" />
                   您的浏览器暂不支持视频播放。

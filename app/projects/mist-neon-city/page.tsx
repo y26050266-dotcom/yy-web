@@ -9,39 +9,39 @@ export const metadata: Metadata = {
   openGraph: {
     title: '雾界霓城 | 杨颖作品集',
     description,
-    images: ['/projects/mist-neon-city/colorful-01.jpg'],
+    images: ['/projects/mist-neon-city/colorful-01.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '雾界霓城 | 杨颖作品集',
     description,
-    images: ['/projects/mist-neon-city/colorful-01.jpg'],
+    images: ['/projects/mist-neon-city/colorful-01.webp'],
   },
 };
 
 const gallery = [
   {
-    src: '/projects/mist-neon-city/colorful-01.jpg',
+    src: '/projects/mist-neon-city/colorful-01.webp',
     alt: '云雾与霓虹包围的未来城市全景',
     label: '彩色氛围 / 01',
   },
   {
-    src: '/projects/mist-neon-city/colorful-02.jpg',
+    src: '/projects/mist-neon-city/colorful-02.webp',
     alt: '霓虹广告牌与漂浮建筑构成的未来城市视角',
     label: '霓虹构图 / 02',
   },
   {
-    src: '/projects/mist-neon-city/shadow-01.png',
+    src: '/projects/mist-neon-city/shadow-01.webp',
     alt: '强烈明暗对比中的未来城市建筑体块',
     label: '光影研究 / 03',
   },
   {
-    src: '/projects/mist-neon-city/shadow-02.png',
+    src: '/projects/mist-neon-city/shadow-02.webp',
     alt: '被体积光切割的黑色城市天际线',
     label: '城市剪影 / 04',
   },
   {
-    src: '/projects/mist-neon-city/shadow-03.png',
+    src: '/projects/mist-neon-city/shadow-03.webp',
     alt: '冷色光线中的高密度未来建筑群',
     label: '体积层次 / 05',
   },

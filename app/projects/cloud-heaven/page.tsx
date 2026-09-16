@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
 };
 
@@ -52,7 +52,7 @@ export default function CloudHeavenProject() {
         </div>
 
         <figure className="project-detail-hero-frame">
-          <img src={`${imageRoot}/cover.png`} alt="云海与群山之间的白色石雕天门" />
+          <img src={`${imageRoot}/cover.webp`} alt="云海与群山之间的白色石雕天门" />
           <figcaption>
             <span>云上天境 / 封面画面</span>
             <span>01 — 04</span>
@@ -63,15 +63,15 @@ export default function CloudHeavenProject() {
       <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--cloud-heaven shell" aria-label="云上天境作品画面">
         <div className="project-detail-gallery-grid project-detail-gallery-grid--cloud-heaven">
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/palace.png`} alt="云海中悬浮的宫殿群与瀑布" loading="lazy" />
+            <img src={`${imageRoot}/palace.webp`} alt="云海中悬浮的宫殿群与瀑布" loading="lazy" />
             <figcaption>云上宫阙 / 02</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/sea-of-clouds.png`} alt="白衣人物立于云海观景台" loading="lazy" />
+            <img src={`${imageRoot}/sea-of-clouds.webp`} alt="白衣人物立于云海观景台" loading="lazy" />
             <figcaption>云海远眺 / 03</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/sky-city.png`} alt="白衣人物眺望云端城阙与长桥" loading="lazy" />
+            <img src={`${imageRoot}/sky-city.webp`} alt="白衣人物眺望云端城阙与长桥" loading="lazy" />
             <figcaption>天境城阙 / 04</figcaption>
           </figure>
         </div>

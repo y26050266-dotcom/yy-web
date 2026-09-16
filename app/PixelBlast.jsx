@@ -287,14 +287,19 @@ export default function PixelBlast({
     const container = containerRef.current;
     if (!container) return undefined;
 
-    const renderer = new THREE.WebGLRenderer({
-      antialias: true,
-      alpha: true,
-      powerPreference: 'high-performance',
-    });
+    let renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        antialias: false,
+        alpha: true,
+        powerPreference: 'low-power',
+      });
+    } catch {
+      return undefined;
+    }
     renderer.domElement.style.width = '100%';
     renderer.domElement.style.height = '100%';
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.25));
     if (transparent) renderer.setClearAlpha(0);
     else renderer.setClearColor(0x000000, 1);
     container.appendChild(renderer.domElement);
@@ -380,24 +385,56 @@ export default function PixelBlast({
       touchTexture.addTouch({ x: x / width, y: y / height });
     };
     window.addEventListener('pointerdown', handlePointerDown, { passive: true });
-    window.addEventListener('pointermove', handlePointerMove, { passive: true });
+    if (touchTexture && window.matchMedia('(pointer: fine)').matches) {
+      window.addEventListener('pointermove', handlePointerMove, { passive: true });
+    }
 
     const clock = new THREE.Clock();
     const timeOffset = Math.random() * 1000;
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let animationFrame = 0;
-    const renderFrame = () => {
-      uniforms.uTime.value = timeOffset + clock.getElapsedTime() * (reducedMotion ? 0 : speed);
+    let lastFrame = 0;
+    let running = false;
+    const visibleSections = new Set();
+    const renderFrame = (now) => {
+      if (!running) return;
+      animationFrame = window.requestAnimationFrame(renderFrame);
+      if (now - lastFrame < 1000 / 30) return;
+      lastFrame = now;
+      uniforms.uTime.value = timeOffset + clock.getElapsedTime() * speed;
       if (liquidEffect) liquidEffect.uniforms.get('uTime').value = uniforms.uTime.value;
       touchTexture?.update();
       if (composer) composer.render();
       else renderer.render(scene, camera);
-      if (!reducedMotion) animationFrame = window.requestAnimationFrame(renderFrame);
     };
-    renderFrame();
+    const updateActivity = () => {
+      const shouldRun = !document.hidden && visibleSections.size > 0;
+      if (shouldRun === running) return;
+      running = shouldRun;
+      if (running) {
+        lastFrame = 0;
+        animationFrame = window.requestAnimationFrame(renderFrame);
+      } else {
+        window.cancelAnimationFrame(animationFrame);
+      }
+    };
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visibleSections.add(entry.target);
+        else visibleSections.delete(entry.target);
+      });
+      updateActivity();
+    });
+    ['profile', 'projects', 'contact'].forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) sectionObserver.observe(section);
+    });
+    document.addEventListener('visibilitychange', updateActivity);
 
     return () => {
+      running = false;
       window.cancelAnimationFrame(animationFrame);
+      document.removeEventListener('visibilitychange', updateActivity);
+      sectionObserver.disconnect();
       window.removeEventListener('pointerdown', handlePointerDown);
       window.removeEventListener('pointermove', handlePointerMove);
       resizeObserver.disconnect();

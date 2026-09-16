@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/project-observatory.png'],
+    images: ['/project-observatory.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/project-observatory.png'],
+    images: ['/project-observatory.webp'],
   },
 };
 
@@ -26,7 +26,7 @@ export default function LastObservatoryProject() {
       index="02"
       title={title}
       subtitle="环境叙事 · 废墟材质 · 空间构图"
-      image="/project-observatory.png"
+      image="/project-observatory.webp"
       alt="被苔藓和浅水覆盖的粗野主义天文台概念场景"
     />
   );

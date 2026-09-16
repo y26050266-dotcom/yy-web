@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
 };
 
@@ -52,7 +52,7 @@ export default function SilkRoadEchoProject() {
         </div>
 
         <figure className="project-detail-hero-frame">
-          <img src={`${imageRoot}/cover.png`} alt="旅人与骆驼走向暖光中的石窟大佛" />
+          <img src={`${imageRoot}/cover.webp`} alt="旅人与骆驼走向暖光中的石窟大佛" />
           <figcaption>
             <span>丝路回响 / 封面画面</span>
             <span>01 — 03</span>
@@ -63,11 +63,11 @@ export default function SilkRoadEchoProject() {
       <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-label="丝路回响作品画面">
         <div className="project-detail-gallery-grid">
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/caravan.png`} alt="夕阳下的沙漠丝路商队" loading="lazy" />
+            <img src={`${imageRoot}/caravan.webp`} alt="夕阳下的沙漠丝路商队" loading="lazy" />
             <figcaption>丝路商队 / 02</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/mural.png`} alt="描绘佛像与人物的古代壁画" loading="lazy" />
+            <img src={`${imageRoot}/mural.webp`} alt="描绘佛像与人物的古代壁画" loading="lazy" />
             <figcaption>石窟壁画 / 03</figcaption>
           </figure>
         </div>

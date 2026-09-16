@@ -9,44 +9,44 @@ export const metadata: Metadata = {
   openGraph: {
     title: '丛林古庙 | 杨颖作品集',
     description,
-    images: ['/projects/jungle-temple/hero.png'],
+    images: ['/projects/jungle-temple/hero.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: '丛林古庙 | 杨颖作品集',
     description,
-    images: ['/projects/jungle-temple/hero.png'],
+    images: ['/projects/jungle-temple/hero.webp'],
   },
 };
 
 const gallery = [
   {
     src: '/projects/jungle-temple/jungle-temple-film.mp4',
-    poster: '/projects/jungle-temple/hero.png',
+    poster: '/projects/jungle-temple/hero.webp',
     alt: '丛林古庙三维环境项目展示视频',
     label: '项目影像 / 01',
     featured: true,
   },
   {
-    src: '/projects/jungle-temple/scene-01.png',
+    src: '/projects/jungle-temple/scene-01.webp',
     alt: '竹林小径与石灯笼构成的古寺入口场景',
     label: '环境氛围 / 02',
     featured: false,
   },
   {
-    src: '/projects/jungle-temple/scene-02.png',
+    src: '/projects/jungle-temple/scene-02.webp',
     alt: '竹叶遮挡下的中式古寺钟楼场景',
     label: '空间层次 / 03',
     featured: false,
   },
   {
-    src: '/projects/jungle-temple/scene-03.png',
+    src: '/projects/jungle-temple/scene-03.webp',
     alt: '竹林环绕的古寺建筑群俯视场景',
     label: '建筑细节 / 04',
     featured: false,
   },
   {
-    src: '/projects/jungle-temple/scene-04.png',
+    src: '/projects/jungle-temple/scene-04.webp',
     alt: '自然侵蚀中的中式双层古寺建筑场景',
     label: '材质与光 / 05',
     featured: false,
@@ -107,13 +107,10 @@ export default function JungleTempleProject() {
               {'poster' in image ? (
                 <video
                   aria-label={image.alt}
-                  autoPlay
                   controls
-                  loop
-                  muted
                   playsInline
                   poster={image.poster}
-                  preload="metadata"
+                  preload="none"
                 >
                   <source src={image.src} type="video/mp4" />
                   您的浏览器暂不支持视频播放。

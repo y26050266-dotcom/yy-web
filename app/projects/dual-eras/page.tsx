@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: [`${imageRoot}/cover.png`],
+    images: [`${imageRoot}/cover.webp`],
   },
 };
 
@@ -55,27 +55,27 @@ export default function DualErasProject() {
       <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--dual-eras shell" aria-label="双生年代作品画面">
         <div className="project-detail-gallery-grid project-detail-gallery-grid--dual-eras">
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/east-guqin.png`} alt="东方古典女性在窗边弹奏古琴" />
+            <img src={`${imageRoot}/east-guqin.webp`} alt="东方古典女性在窗边弹奏古琴" />
             <figcaption>窗前抚琴 / 01</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/east-painting.png`} alt="东方古典女性在冬日书房绘制梅花" loading="lazy" />
+            <img src={`${imageRoot}/east-painting.webp`} alt="东方古典女性在冬日书房绘制梅花" loading="lazy" />
             <figcaption>冬日绘卷 / 02</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/east-go.png`} alt="东方古典女性在书房中对弈" loading="lazy" />
+            <img src={`${imageRoot}/east-go.webp`} alt="东方古典女性在书房中对弈" loading="lazy" />
             <figcaption>静室对弈 / 03</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/cover.png`} alt="复古西方女性坐在梳妆镜前佩戴耳饰" loading="lazy" />
+            <img src={`${imageRoot}/cover.webp`} alt="复古西方女性坐在梳妆镜前佩戴耳饰" loading="lazy" />
             <figcaption>镜前时光 · 封面画面 / 04</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/west-terrace.png`} alt="复古西方女性在海边露台饮茶" loading="lazy" />
+            <img src={`${imageRoot}/west-terrace.webp`} alt="复古西方女性在海边露台饮茶" loading="lazy" />
             <figcaption>海边午后 / 05</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src={`${imageRoot}/west-car.png`} alt="复古西方女性驾驶红色敞篷车沿海岸出行" loading="lazy" />
+            <img src={`${imageRoot}/west-car.webp`} alt="复古西方女性驾驶红色敞篷车沿海岸出行" loading="lazy" />
             <figcaption>海岸兜风 / 06</figcaption>
           </figure>
         </div>

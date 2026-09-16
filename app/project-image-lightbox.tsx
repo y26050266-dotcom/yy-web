@@ -20,13 +20,13 @@ export default function ProjectImageLightbox() {
   }, []);
 
   useEffect(() => {
-    const prepareImages = () => {
-      document.querySelectorAll<HTMLImageElement>(imageSelector).forEach((image) => {
-        image.tabIndex = 0;
-        image.setAttribute('role', 'button');
-        image.setAttribute('aria-label', `放大查看：${image.alt || '项目图片'}`);
-      });
-    };
+    const images = document.querySelectorAll<HTMLImageElement>(imageSelector);
+    if (!images.length) return;
+    images.forEach((image) => {
+      image.tabIndex = 0;
+      image.setAttribute('role', 'button');
+      image.setAttribute('aria-label', `放大查看：${image.alt || '项目图片'}`);
+    });
 
     const openImage = (target: EventTarget | null) => {
       if (!(target instanceof HTMLImageElement) || !target.matches(imageSelector)) {
@@ -51,14 +51,10 @@ export default function ProjectImageLightbox() {
       }
     };
 
-    prepareImages();
-    const observer = new MutationObserver(prepareImages);
-    observer.observe(document.body, { childList: true, subtree: true });
     document.addEventListener('click', handleClick);
     document.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      observer.disconnect();
       document.removeEventListener('click', handleClick);
       document.removeEventListener('keydown', handleKeyDown);
     };

@@ -1,7 +1,6 @@
-import PixelBlast from './PixelBlast';
 import BorderGlow from './BorderGlow';
 import FloatingNavigation from './FloatingNavigation';
-import MotionDirector from './MotionDirector';
+import DeferredEffects from './DeferredEffects';
 
 type ProjectItem = {
   index: string;
@@ -19,7 +18,7 @@ const projects: ProjectItem[] = [
     index: '01',
     title: '3D环境设计',
     subtitle: '环境叙事 · 空间构图 · 场景搭建',
-    image: '/projects/3d-environment/cover.png',
+    image: '/projects/3d-environment/cover.webp',
     alt: '竹林小径与石灯笼构成的中式古寺三维环境场景',
     className: 'project-card project-card--wide',
     label: 'CATEGORY · 3D ENVIRONMENT',
@@ -29,7 +28,7 @@ const projects: ProjectItem[] = [
     index: '02',
     title: '道具设计',
     subtitle: '造型设计 · PBR材质 · 细节叙事',
-    image: '/projects/prop-design/spherical-scout-drone/cover.png',
+    image: '/projects/prop-design/spherical-scout-drone/cover.webp',
     alt: '灰黑装甲与蓝色发光组件构成的球形侦察无人机',
     className: 'project-card',
     label: 'CATEGORY · PROP DESIGN',
@@ -39,7 +38,7 @@ const projects: ProjectItem[] = [
     index: '03',
     title: 'AI视觉创作',
     subtitle: '概念探索 · 视觉叙事 · AIGC 创作',
-    image: '/projects/ai-visual-creation/epic-fantasy/cover.png',
+    image: '/projects/ai-visual-creation/epic-fantasy/cover.webp',
     alt: '骑士骑马奔向喷火巨龙与燃烧的城邦',
     className: 'project-card',
     label: 'CATEGORY · AI VISUAL EXPLORATIONS',
@@ -84,7 +83,7 @@ function ProjectCard({ project }: { project: ProjectItem }) {
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
-      <MotionDirector />
+      <DeferredEffects />
       <section className="hero" id="top">
         <div className="hero-stage">
           <div className="hero-star-rail hero-star-rail--top" aria-hidden="true">
@@ -125,10 +124,10 @@ export default function Home() {
                   <i className="panel-screw panel-screw--bl" aria-hidden="true" />
                   <i className="panel-screw panel-screw--br" aria-hidden="true" />
                   <span className="arcade-mascot arcade-mascot--robot" aria-hidden="true">
-                    <img src="/pixel-mascots-v1.png" alt="" />
+                    <img src="/pixel-mascots-v1.webp" alt="" />
                   </span>
                   <span className="arcade-mascot arcade-mascot--rocket" aria-hidden="true">
-                    <img src="/pixel-mascots-v1.png" alt="" />
+                    <img src="/pixel-mascots-v1.webp" alt="" />
                   </span>
                   <p className="panel-player">杨颖 · PORTFOLIO 2026</p>
                   <h1 aria-label="PORTFOLIO">
@@ -182,27 +181,6 @@ export default function Home() {
 
       <FloatingNavigation />
 
-      <PixelBlast
-        className="home-pixel-blast"
-        variant="circle"
-        pixelSize={6}
-        color="#56c6e8"
-        patternScale={3}
-        patternDensity={0.5}
-        pixelSizeJitter={0.5}
-        enableRipples
-        rippleSpeed={0.4}
-        rippleThickness={0.12}
-        rippleIntensityScale={1.15}
-        liquid
-        liquidStrength={0.08}
-        liquidRadius={1.1}
-        liquidWobbleSpeed={5}
-        speed={0.22}
-        edgeFade={0.22}
-        transparent
-      />
-
       <section className="profile-section section-pad" id="profile">
         <div className="shell">
           <div className="section-heading">
@@ -223,10 +201,12 @@ export default function Home() {
               <BorderGlow className="profile-glow-card profile-glow-card--portrait" animated>
                 <figure className="portrait-panel">
                   <img
-                    src="/avatar.jpg"
+                    src="/avatar.webp"
                     alt="杨颖个人照片"
                     width="300"
                     height="400"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <figcaption>
                     <span>YANG YING</span>
