@@ -46,18 +46,14 @@ export default function ShanHaiBeastsProject() {
             <p>{description}</p>
           </div>
         </div>
-
-        <figure className="project-detail-hero-frame">
-          <img src={`${imageRoot}/cover.png`} alt="毕方振翅掠过山岳云海，旅人立于下方" />
-          <figcaption>
-            <span>毕方</span>
-            <span>01 / 04</span>
-          </figcaption>
-        </figure>
       </section>
 
-      <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--cloud-heaven shell" aria-label="异兽山海作品画面">
-        <div className="project-detail-gallery-grid project-detail-gallery-grid--cloud-heaven">
+      <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--shan-hai-beasts shell" aria-label="异兽山海作品画面">
+        <div className="project-detail-gallery-grid project-detail-gallery-grid--shan-hai-beasts">
+          <figure className="project-detail-shot">
+            <img src={`${imageRoot}/cover.png`} alt="毕方振翅掠过山岳云海，旅人立于下方" />
+            <figcaption><span>毕方</span><span>01 / 04</span></figcaption>
+          </figure>
           <figure className="project-detail-shot">
             <img src={`${imageRoot}/qiongqi.png`} alt="穷奇立于山崖，旅人在山脚仰望" loading="lazy" />
             <figcaption><span>穷奇</span><span>02 / 04</span></figcaption>
