@@ -92,6 +92,15 @@ export default function DroneControllerProject() {
           <h2 id="controller-gallery-title">无人机<br />控制器</h2>
           <div className="project-detail-gallery-copy">
             <p>以便携式无人机控制终端为核心，将显示屏、实体操控组件、信号天线与硬表面护甲整合为分区清晰的设备造型，突出工业结构、操作逻辑与未来科技感。</p>
+            <div className="project-detail-software">
+              <span>使用软件</span>
+              <ul>
+                <li>Maya</li>
+                <li>ZBrush</li>
+                <li>Substance 3D Painter</li>
+                <li>procreate</li>
+              </ul>
+            </div>
           </div>
         </div>
 

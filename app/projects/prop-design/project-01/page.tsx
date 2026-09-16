@@ -97,6 +97,15 @@ export default function SphericalScoutDroneProject() {
           <h2 id="prop-gallery-title">球形侦察<br />无人机</h2>
           <div className="project-detail-gallery-copy">
             <p>以紧凑的球形轮廓为核心，将灰黑金属装甲、模块化分区与蓝色发光组件整合为统一的视觉语言，突出侦察装置的工业质感、结构层级与未来科技感。</p>
+            <div className="project-detail-software">
+              <span>使用软件</span>
+              <ul>
+                <li>Maya</li>
+                <li>ZBrush</li>
+                <li>Substance 3D Painter</li>
+                <li>procreate</li>
+              </ul>
+            </div>
           </div>
         </div>
 
