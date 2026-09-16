@@ -52,7 +52,7 @@ export default function AiVisualCreationProjects() {
 
         <a className="project-category-card" href="/projects/synthetic-memory">
           <div className="project-category-card-media">
-            <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="喷火巨龙掠过史诗幻想战场" />
+            <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
             <span>AI VISUAL EXPLORATIONS / 01</span>
           </div>
           <div className="project-category-card-copy">

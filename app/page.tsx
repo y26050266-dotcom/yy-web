@@ -40,7 +40,7 @@ const projects: ProjectItem[] = [
     title: 'AI视觉创作',
     subtitle: '概念探索 · 视觉叙事 · AIGC 创作',
     image: '/projects/ai-visual-creation/epic-fantasy/cover.png',
-    alt: '喷火巨龙掠过史诗幻想战场',
+    alt: '骑士骑马奔向喷火巨龙与燃烧的城邦',
     className: 'project-card',
     label: 'CATEGORY · AI VISUAL EXPLORATIONS',
     href: '/projects/ai-visual-creation',

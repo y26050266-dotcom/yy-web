@@ -47,7 +47,7 @@ export default function SyntheticMemoryProject() {
         </div>
 
         <figure className="project-detail-hero-frame">
-          <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="喷火巨龙掠过史诗幻想战场" />
+          <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="骑士骑马奔向喷火巨龙与燃烧的城邦" />
           <figcaption>
             <span>史诗幻想 / 封面画面</span>
             <span>01 — 03</span>
@@ -66,8 +66,8 @@ export default function SyntheticMemoryProject() {
             <figcaption>冰雪荒原 / 02</figcaption>
           </figure>
           <figure className="project-detail-shot">
-            <img src="/projects/ai-visual-creation/epic-fantasy/rider.png" alt="骑士骑马奔向被巨龙火焰吞没的城邦" loading="lazy" />
-            <figcaption>燃烧的城邦 / 03</figcaption>
+            <img src="/projects/ai-visual-creation/epic-fantasy/rider.png" alt="巨龙向战场喷吐火焰" loading="lazy" />
+            <figcaption>烈焰战场 / 03</figcaption>
           </figure>
         </div>
       </section>
