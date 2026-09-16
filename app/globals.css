@@ -2645,6 +2645,11 @@ a {
   letter-spacing: -0.035em;
 }
 
+.project-detail-title--ai-visual h1 {
+  font-size: clamp(54px, 6.2vw, 108px);
+  overflow-wrap: anywhere;
+}
+
 .project-detail-tags {
   display: flex;
   flex-wrap: wrap;
@@ -3316,6 +3321,15 @@ a {
   line-height: 1.02;
   letter-spacing: -0.015em;
   text-shadow: 2px 3px 0 #27363b, 4px 5px 0 #050607;
+}
+
+.project-category-page--ai-visual .project-category-card h2 {
+  font-size: clamp(38px, 3.3vw, 60px);
+  overflow-wrap: anywhere;
+}
+
+.project-detail-page--ai-visual .project-detail-hero-frame img {
+  object-fit: contain;
 }
 
 @media (min-width: 901px) {

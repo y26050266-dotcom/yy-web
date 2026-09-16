@@ -37,13 +37,13 @@ const projects: ProjectItem[] = [
   },
   {
     index: '03',
-    title: 'SYNTHETIC MEMORY',
-    subtitle: 'AIGC 实验 · 视觉开发 · 材质研究',
+    title: 'AI视觉创作',
+    subtitle: '概念探索 · 视觉叙事 · AIGC 创作',
     image: '/project-memory.png',
     alt: '暗色展厅中的透明地质记忆核心抽象视觉',
     className: 'project-card',
-    label: 'CONCEPT PLACEHOLDER',
-    href: '/projects/synthetic-memory',
+    label: 'CATEGORY · AI VISUAL EXPLORATIONS',
+    href: '/projects/ai-visual-creation',
   },
 ];
 
@@ -349,7 +349,7 @@ export default function Home() {
               <span>03</span>
               <span>SELECTED PROJECTS / 精选项目</span>
             </div>
-            <p>VISUAL CONCEPT PLACEHOLDERS</p>
+            <p>ENVIRONMENT / PROPS / AI VISUALS</p>
           </div>
 
           <div className="motion-section-title" aria-hidden="true">
