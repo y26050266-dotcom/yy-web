@@ -44,6 +44,10 @@ export default function CloudHeavenProject() {
           <div className="project-detail-copy">
             <span>02 / 作品详情</span>
             <p>以东方建筑、云海、群山与悬浮宫殿为主要视觉元素，探索理想化的东方幻想世界。作品重点尝试空灵的空间层次、柔和光线与大尺度环境构图，营造宁静、神圣且超现实的视觉氛围。</p>
+            <div className="project-detail-software">
+              <span>使用软件</span>
+              <ul><li>ChatGPT</li><li>Midjourney</li></ul>
+            </div>
           </div>
         </div>
 

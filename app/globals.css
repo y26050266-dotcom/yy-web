@@ -2856,6 +2856,12 @@ a {
   line-height: 1;
 }
 
+.project-detail-page--ai-visual .project-detail-copy .project-detail-software > span {
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+
 .project-detail-no-break {
   white-space: nowrap;
 }

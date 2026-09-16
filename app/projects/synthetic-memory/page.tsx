@@ -43,6 +43,10 @@ export default function SyntheticMemoryProject() {
           <div className="project-detail-copy">
             <span>01 / 作品详情</span>
             <p>以巨龙、战争与毁灭中的城邦为核心意象，探索西方史诗幻想世界中的规模感、冲突感与电影化构图。通过强烈的冷暖对比、火焰、烟雾与大场景叙事，尝试塑造具有压迫感和沉浸感的幻想战争氛围。</p>
+            <div className="project-detail-software">
+              <span>使用软件</span>
+              <ul><li>ChatGPT</li><li>Midjourney</li></ul>
+            </div>
           </div>
         </div>
 

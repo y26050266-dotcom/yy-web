@@ -44,6 +44,10 @@ export default function ShanHaiBeastsProject() {
           <div className="project-detail-copy">
             <span>04 / 作品详情</span>
             <p>{description}</p>
+            <div className="project-detail-software">
+              <span>使用软件</span>
+              <ul><li>ChatGPT</li><li>Midjourney</li></ul>
+            </div>
           </div>
         </div>
       </section>
