@@ -3328,6 +3328,31 @@ a {
   overflow-wrap: anywhere;
 }
 
+.project-category-page--ai-visual .project-category-card {
+  width: min(100%, 860px);
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.project-category-page--ai-visual .project-category-card-media {
+  min-height: 0;
+  border-right: 0;
+  border-bottom: 4px solid #17191c;
+}
+
+.project-category-page--ai-visual .project-category-card-media img {
+  height: auto;
+  object-fit: contain;
+}
+
+.project-category-page--ai-visual .project-category-card:hover .project-category-card-media img {
+  scale: 1;
+}
+
+.project-category-page--ai-visual .project-category-card-copy {
+  padding: clamp(28px, 4vw, 52px);
+}
+
 .project-detail-page--ai-visual .project-detail-hero-frame img {
   object-fit: contain;
 }
