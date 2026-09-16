@@ -3328,21 +3328,30 @@ a {
   overflow-wrap: anywhere;
 }
 
+.project-category-page--ai-visual .project-category-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 44px);
+  margin-top: clamp(56px, 7vw, 100px);
+}
+
 .project-category-page--ai-visual .project-category-card {
-  width: min(100%, 860px);
-  margin-inline: auto;
+  width: 100%;
+  margin: 0;
   grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
 }
 
 .project-category-page--ai-visual .project-category-card-media {
   min-height: 0;
+  aspect-ratio: 16 / 9;
   border-right: 0;
   border-bottom: 4px solid #17191c;
 }
 
 .project-category-page--ai-visual .project-category-card-media img {
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-category-page--ai-visual .project-category-card:hover .project-category-card-media img {
@@ -3355,6 +3364,12 @@ a {
 
 .project-detail-page--ai-visual .project-detail-hero-frame img {
   object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .project-category-page--ai-visual .project-category-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (min-width: 901px) {
