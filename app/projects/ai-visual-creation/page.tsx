@@ -106,6 +106,20 @@ export default function AiVisualCreationProjects() {
               <span className="project-category-card-cta">查看独立详情页 ↗</span>
             </div>
           </a>
+
+          <a className="project-category-card" href="/projects/dual-eras">
+            <div className="project-category-card-media">
+              <img src="/projects/ai-visual-creation/dual-eras/cover.png" alt="复古西方女性坐在梳妆镜前佩戴耳饰" loading="lazy" />
+              <span>AI VISUAL EXPLORATIONS / 05</span>
+            </div>
+            <div className="project-category-card-copy">
+              <span className="project-category-card-index">PROJECT / 05</span>
+              <h2>双生年代</h2>
+              <p className="project-category-card-tags">东西方女性 · 时代氛围</p>
+              <p>以复古西方生活与东方古典文化场景的对照，探索人物的时代感与文化氛围。</p>
+              <span className="project-category-card-cta">查看独立详情页 ↗</span>
+            </div>
+          </a>
         </div>
       </section>
 
