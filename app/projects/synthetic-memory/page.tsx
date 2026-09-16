@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
-const title = 'SYNTHETIC MEMORY';
-const description = '透明质感与暗色空间构成的 AI 视觉概念作品。';
+const title = '史诗幻想';
+const description = '巨龙、火焰战场与冰雪荒原构成的史诗幻想视觉作品。';
 
 export const metadata: Metadata = {
   title: `${title} | 杨颖作品集`,
@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/project-memory.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${title} | 杨颖作品集`,
     description,
-    images: ['/project-memory.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
   },
 };
 
@@ -37,22 +37,39 @@ export default function SyntheticMemoryProject() {
             <p>AI VISUAL EXPLORATIONS / 01</p>
             <h1>{title}</h1>
             <div className="project-detail-tags">
-              <span><b>01</b>概念探索 · 视觉叙事 · 材质研究</span>
+              <span><b>01</b>巨龙 · 战场 · 冰雪</span>
             </div>
           </div>
           <div className="project-detail-copy">
             <span>01 / 作品详情</span>
-            <p>透明的地质形态与暗色展陈空间交织，呈现一幅兼具材质层次和未来感的概念视觉。点击图片可放大查看。</p>
+            <p>以火焰战场和冰雪荒原呈现巨龙主题的两种氛围。点击画面可放大查看。</p>
           </div>
         </div>
 
         <figure className="project-detail-hero-frame">
-          <img src="/project-memory.png" alt="暗色展厅中的透明地质记忆核心抽象视觉" />
+          <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="喷火巨龙掠过史诗幻想战场" />
           <figcaption>
-            <span>CONCEPT VISUAL / 点击图片放大</span>
-            <span>01 — 01</span>
+            <span>史诗幻想 / 封面画面</span>
+            <span>01 — 03</span>
           </figcaption>
         </figure>
+      </section>
+
+      <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-labelledby="epic-fantasy-gallery-title">
+        <div className="project-detail-gallery-intro">
+          <h2 id="epic-fantasy-gallery-title">更多画面</h2>
+          <p>从冰雪荒原到燃烧的城邦，延展史诗幻想的场景氛围。</p>
+        </div>
+        <div className="project-detail-gallery-grid">
+          <figure className="project-detail-shot">
+            <img src="/projects/ai-visual-creation/epic-fantasy/icefront.png" alt="巨龙飞越冰雪荒原与行军队伍" loading="lazy" />
+            <figcaption>冰雪荒原 / 02</figcaption>
+          </figure>
+          <figure className="project-detail-shot">
+            <img src="/projects/ai-visual-creation/epic-fantasy/rider.png" alt="骑士骑马奔向被巨龙火焰吞没的城邦" loading="lazy" />
+            <figcaption>燃烧的城邦 / 03</figcaption>
+          </figure>
+        </div>
       </section>
 
       <footer className="project-detail-footer shell">

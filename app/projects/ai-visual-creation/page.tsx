@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI视觉创作 | 杨颖作品集',
     description,
-    images: ['/project-memory.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI视觉创作 | 杨颖作品集',
     description,
-    images: ['/project-memory.png'],
+    images: ['/projects/ai-visual-creation/epic-fantasy/cover.png'],
   },
 };
 
@@ -52,14 +52,28 @@ export default function AiVisualCreationProjects() {
 
         <a className="project-category-card" href="/projects/synthetic-memory">
           <div className="project-category-card-media">
-            <img src="/project-memory.png" alt="暗色展厅中的透明地质记忆核心抽象视觉" />
+            <img src="/projects/ai-visual-creation/epic-fantasy/cover.png" alt="喷火巨龙掠过史诗幻想战场" />
             <span>AI VISUAL EXPLORATIONS / 01</span>
           </div>
           <div className="project-category-card-copy">
             <span className="project-category-card-index">PROJECT / 01</span>
-            <h2>SYNTHETIC MEMORY</h2>
-            <p className="project-category-card-tags">概念探索 · 视觉叙事 · 材质研究</p>
-            <p>以透明质感与暗色空间构成的概念视觉。进入详情页可放大查看画面。</p>
+            <h2>史诗幻想</h2>
+            <p className="project-category-card-tags">巨龙 · 战场 · 冰雪</p>
+            <p>以火焰战场与冰雪荒原为两组视觉场景，呈现巨龙主题的史诗幻想氛围。</p>
+            <span className="project-category-card-cta">查看独立详情页 ↗</span>
+          </div>
+        </a>
+
+        <a className="project-category-card" href="/projects/cloud-heaven">
+          <div className="project-category-card-media">
+            <img src="/projects/ai-visual-creation/cloud-heaven/cover.png" alt="云海与群山之间的白色石雕天门" loading="lazy" />
+            <span>AI VISUAL EXPLORATIONS / 02</span>
+          </div>
+          <div className="project-category-card-copy">
+            <span className="project-category-card-index">PROJECT / 02</span>
+            <h2>云上天境</h2>
+            <p className="project-category-card-tags">云海 · 宫阙 · 飞瀑</p>
+            <p>白色天门、云上宫阙与悬空山峦，构成明亮恢宏的东方幻想世界。</p>
             <span className="project-category-card-cta">查看独立详情页 ↗</span>
           </div>
         </a>
