@@ -78,6 +78,20 @@ export default function AiVisualCreationProjects() {
               <span className="project-category-card-cta">查看独立详情页 ↗</span>
             </div>
           </a>
+
+          <a className="project-category-card" href="/projects/silk-road-echo">
+            <div className="project-category-card-media">
+              <img src="/projects/ai-visual-creation/silk-road-echo/cover.png" alt="旅人与骆驼走向暖光中的石窟大佛" loading="lazy" />
+              <span>AI VISUAL EXPLORATIONS / 03</span>
+            </div>
+            <div className="project-category-card-copy">
+              <span className="project-category-card-index">PROJECT / 03</span>
+              <h2>丝路回响</h2>
+              <p className="project-category-card-tags">石窟 · 壁画 · 丝路</p>
+              <p>从敦煌石窟到沙漠商队，以暖色光影勾勒古代文明的旅途氛围。</p>
+              <span className="project-category-card-cta">查看独立详情页 ↗</span>
+            </div>
+          </a>
         </div>
       </section>
 
