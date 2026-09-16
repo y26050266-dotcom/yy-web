@@ -42,7 +42,7 @@ export default function SyntheticMemoryProject() {
           </div>
           <div className="project-detail-copy">
             <span>01 / 作品详情</span>
-            <p>以火焰战场和冰雪荒原呈现巨龙主题的两种氛围。点击画面可放大查看。</p>
+            <p>以巨龙、战争与毁灭中的城邦为核心意象，探索西方史诗幻想世界中的规模感、冲突感与电影化构图。通过强烈的冷暖对比、火焰、烟雾与大场景叙事，尝试塑造具有压迫感和沉浸感的幻想战争氛围。</p>
           </div>
         </div>
 
@@ -55,11 +55,7 @@ export default function SyntheticMemoryProject() {
         </figure>
       </section>
 
-      <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-labelledby="epic-fantasy-gallery-title">
-        <div className="project-detail-gallery-intro">
-          <h2 id="epic-fantasy-gallery-title">更多画面</h2>
-          <p>从冰雪荒原到燃烧的城邦，延展史诗幻想的场景氛围。</p>
-        </div>
+      <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-label="史诗幻想作品画面">
         <div className="project-detail-gallery-grid">
           <figure className="project-detail-shot">
             <img src="/projects/ai-visual-creation/epic-fantasy/icefront.png" alt="巨龙飞越冰雪荒原与行军队伍" loading="lazy" />
