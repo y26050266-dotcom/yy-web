@@ -2734,6 +2734,24 @@ a {
   font-size: 8px;
 }
 
+.project-detail-page--shan-hai-beasts .project-detail-hero-frame figcaption,
+.project-detail-page--shan-hai-beasts .project-detail-shot figcaption {
+  min-height: 62px;
+  padding: 12px 20px;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.project-detail-page--shan-hai-beasts .project-detail-hero-frame figcaption span:last-child,
+.project-detail-page--shan-hai-beasts .project-detail-shot figcaption span:last-child {
+  font-family: 'Silkscreen Local', var(--font-geist-mono), monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .project-detail-gallery {
   padding: clamp(110px, 12vw, 190px) 0;
 }
@@ -3339,7 +3357,7 @@ a {
 
 .project-category-page--ai-visual .project-category-cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 3vw, 44px);
   margin-top: clamp(56px, 7vw, 100px);
 }
@@ -3378,12 +3396,6 @@ a {
 @media (max-width: 760px) {
   .project-category-page--ai-visual .project-category-cards {
     grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-@media (min-width: 761px) and (max-width: 1000px) {
-  .project-category-page--ai-visual .project-category-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

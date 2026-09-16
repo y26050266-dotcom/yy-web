@@ -92,6 +92,20 @@ export default function AiVisualCreationProjects() {
               <span className="project-category-card-cta">查看独立详情页 ↗</span>
             </div>
           </a>
+
+          <a className="project-category-card" href="/projects/shan-hai-beasts">
+            <div className="project-category-card-media">
+              <img src="/projects/ai-visual-creation/shan-hai-beasts/cover.png" alt="毕方振翅掠过山岳云海" loading="lazy" />
+              <span>AI VISUAL EXPLORATIONS / 04</span>
+            </div>
+            <div className="project-category-card-copy">
+              <span className="project-category-card-index">PROJECT / 04</span>
+              <h2>异兽山海</h2>
+              <p className="project-category-card-tags">神话异兽 · 山岳云海</p>
+              <p>以《山海经》为灵感，探索巨型异兽与远古东方神话世界。</p>
+              <span className="project-category-card-cta">查看独立详情页 ↗</span>
+            </div>
+          </a>
         </div>
       </section>
 
