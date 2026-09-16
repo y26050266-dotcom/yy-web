@@ -3369,9 +3369,17 @@ a {
 
 .project-category-page--ai-visual .project-category-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: clamp(24px, 3vw, 44px);
   margin-top: clamp(56px, 7vw, 100px);
+}
+
+.project-category-page--ai-visual .project-category-card:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.project-category-page--ai-visual .project-category-card:nth-child(n + 3) {
+  grid-column: span 2;
 }
 
 .project-category-page--ai-visual .project-category-card {
@@ -3408,6 +3416,10 @@ a {
 @media (max-width: 760px) {
   .project-category-page--ai-visual .project-category-cards {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-category-page--ai-visual .project-category-card:nth-child(n) {
+    grid-column: auto;
   }
 }
 
