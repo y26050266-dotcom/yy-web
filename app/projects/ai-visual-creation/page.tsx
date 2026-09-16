@@ -38,7 +38,7 @@ export default function AiVisualCreationProjects() {
           </div>
           <div className="project-category-summary">
             <span>AI VISUAL EXPLORATIONS</span>
-            <p>围绕概念探索、视觉叙事与 AIGC 创作展开的视觉作品。点击下方项目卡片，进入独立详情页查看画面。</p>
+            <p>以 AI 视觉生成为创作媒介，围绕幻想世界、历史文化与人物形象展开探索。通过场景构图、色彩光影与叙事氛围的设计，呈现兼具文化想象与电影感的视觉作品。</p>
           </div>
         </div>
       </section>
