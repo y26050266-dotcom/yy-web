@@ -43,7 +43,7 @@ export default function CloudHeavenProject() {
           </div>
           <div className="project-detail-copy">
             <span>02 / 作品详情</span>
-            <p>石雕天门通向云海深处，悬空宫阙与瀑布延展出层叠的东方幻想空间。点击画面可放大查看。</p>
+            <p>以东方建筑、云海、群山与悬浮宫殿为主要视觉元素，探索理想化的东方幻想世界。作品重点尝试空灵的空间层次、柔和光线与大尺度环境构图，营造宁静、神圣且超现实的视觉氛围。</p>
           </div>
         </div>
 
@@ -56,13 +56,9 @@ export default function CloudHeavenProject() {
         </figure>
       </section>
 
-      <section className="project-detail-gallery project-detail-gallery--no-bar shell" aria-labelledby="cloud-heaven-gallery-title">
-        <div className="project-detail-gallery-intro">
-          <h2 id="cloud-heaven-gallery-title">云端漫游</h2>
-          <p>从远观宫阙到俯瞰云海，以不同视角呈现天境的空间层次。</p>
-        </div>
-        <div className="project-detail-gallery-grid">
-          <figure className="project-detail-shot project-detail-shot--featured">
+      <section className="project-detail-gallery project-detail-gallery--no-bar project-detail-gallery--cloud-heaven shell" aria-label="云上天境作品画面">
+        <div className="project-detail-gallery-grid project-detail-gallery-grid--cloud-heaven">
+          <figure className="project-detail-shot">
             <img src={`${imageRoot}/palace.png`} alt="云海中悬浮的宫殿群与瀑布" loading="lazy" />
             <figcaption>云上宫阙 / 02</figcaption>
           </figure>

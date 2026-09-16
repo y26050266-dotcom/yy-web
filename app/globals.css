@@ -2848,6 +2848,15 @@ a {
   gap: 30px;
 }
 
+.project-detail-gallery--cloud-heaven {
+  width: min(1880px, calc(100% - 48px));
+}
+
+.project-detail-gallery-grid--cloud-heaven {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 1.8vw, 28px);
+}
+
 .project-detail-shot {
   margin: 0;
   overflow: hidden;
