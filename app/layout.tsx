@@ -5,6 +5,8 @@ import './globals.css';
 
 const siteUrl =
   process.env.SITE_URL ??
+  process.env.DEPLOY_PRIME_URL ??
+  process.env.URL ??
   'https://yang-ying-portfolio-2026.y26050266.chatgpt.site';
 
 const geistSans = Geist({

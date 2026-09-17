@@ -38,3 +38,6 @@ next-env.d.ts
 /work/
 /.pnpm-store/
 /tmp/
+/.netlify/
+/.sites-runtime/
+*.tsbuildinfo
